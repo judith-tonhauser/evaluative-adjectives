@@ -14,6 +14,7 @@ nrow(cd) #1088 = 68 Turkers x 16 ratings
 # load libraries
 library(lme4)
 packageVersion("lme4")
+library(brms)
 
 # recode responses so that 1 = yes (ai) and 0 = no (nai)
 table(cd$Response)
@@ -94,3 +95,9 @@ summary(m.1)
 
 anova(m,m.1)
 
+# Bayesian regression analysis reported in paper
+cd.target$NumResponse = as.numeric(ifelse(cd.target$Response == "0",0,1))
+m = brm(NumResponse ~ SentenceType +  (1 + SentenceType | Adj) + (1 + SentenceType | workerid), 
+        data = cd.target, seed=42, family=bernoulli())
+summary(m)
+plot(m, pars = c("SentenceType"))
