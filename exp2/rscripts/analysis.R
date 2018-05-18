@@ -15,6 +15,7 @@ nrow(cd) #1088 = 68 Turkers x 16 ratings
 library(lme4)
 packageVersion("lme4")
 library(brms)
+citation("brms")
 
 # recode responses so that 1 = yes (ai) and 0 = no (nai)
 table(cd$Response)
