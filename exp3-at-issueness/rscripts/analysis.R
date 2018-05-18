@@ -30,6 +30,10 @@ cd$Response <- as.factor(cd$Response)
 cd.target <- droplevels(subset(cd, cd$Adj != "none"))
 nrow(cd.target) #680 (680 / 10 adj = 68 Turkers)
 
+# ID = item
+names(cd.target)
+table(cd.target$ID)
+
 # how many responses per stimulus?
 t <- as.data.frame(table(cd.target$ID))
 t
@@ -98,7 +102,7 @@ anova(m,m.1)
 
 # Bayesian regression analysis reported in paper
 cd.target$NumResponse = as.numeric(ifelse(cd.target$Response == "0",0,1))
-m = brm(NumResponse ~ SentenceType +  (1 + SentenceType | Adj) + (1 + SentenceType | workerid), 
+m = brm(NumResponse ~ SentenceType +  (1 | ID) + (1 + SentenceType | Adj) + (1 + SentenceType | workerid), 
         data = cd.target, seed=42, family=bernoulli())
 summary(m)
 plot(m, pars = c("SentenceType"))
