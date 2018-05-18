@@ -38,7 +38,8 @@ t$SentenceType <- factor(t$SentenceType,
 table(t$Adj)
 
 # Figure 7
-# target items only: proportion of 'yes' responses (ai) by condition and adjective
+# target items only: proportion of 'yes' responses (ai) by condition, with error bars
+# mean for each adjective overlaid
 cd.target <- droplevels(subset(t, t$Adj != "none"))
 nrow(cd.target) #680 = 68 Turkers x 10 adjectives
 
@@ -46,14 +47,33 @@ table(cd.target$SentenceType)
 str(cd.target$Response)
 table(cd.target$Response)
 
-agr = aggregate(Response ~ Adj + SentenceType, data=cd.target, FUN="mean")
-agr$CILow = aggregate(Response ~ Adj + AIness, data=cd.target, FUN="ci.low")$Response
-agr$CIHigh = aggregate(Response ~ Adj + AIness, data=cd.target, FUN="ci.high")$Response
+agr = aggregate(Response ~ SentenceType, data=cd.target, FUN="mean")
+agr$CILow = aggregate(Response ~ SentenceType, data=cd.target, FUN="ci.low")$Response
+agr$CIHigh = aggregate(Response ~ SentenceType, data=cd.target, FUN="ci.high")$Response
 agr$YMin = agr$Response - agr$CILow
 agr$YMax = agr$Response + agr$CIHigh
 dodge = position_dodge(.9)
 agr
 
+agr2 = aggregate(Response ~ Adj + SentenceType, data=cd.target, FUN="mean")
+agr2
+
+ggplot(agr, aes(x=SentenceType,y=Response,fill=SentenceType)) +
+  geom_bar(stat="identity",position=dodge) +
+  geom_bar(stat="identity",fill="grey90",position=dodge) +
+  theme(legend.position="none") +
+  geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.25,position=dodge) +
+  geom_line(data=agr2, aes(x=SentenceType,y=Response,group=Adj,colour=Adj)) +
+  geom_text(data = subset(agr2, SentenceType == "neutral" & (Adj != "polite" & Adj != "wise" & Adj != "fortunate" & Adj != "foolish")), 
+            aes(label = Adj, size=12, colour = Adj),hjust=1.3) +
+  geom_text(data = subset(agr2, SentenceType == "follows from common ground" & (Adj == "polite" | Adj == "wise" | Adj == "fortunate" | Adj == "foolish")), 
+            aes(label = Adj, size=12, colour = Adj),hjust=-.2) +
+  scale_x_discrete(name="Generalization") +
+  scale_y_continuous(name="Proportion of `yes' responses") 
+  #theme(axis.title.x=element_blank(),axis.text.x=element_blank(),axis.ticks.x=element_blank())
+ggsave(f="../graphs/proportion-ai-by-condition.pdf",height=4,width=3.8)
+
+# old figure 7
 ggplot(agr, aes(x=SentenceType,y=Response,fill=SentenceType)) +
   geom_bar(stat="identity",position=dodge) +
   geom_bar(stat="identity",color="black",position=dodge) +
