@@ -102,7 +102,8 @@ anova(m,m.1)
 
 # Bayesian regression analysis reported in paper
 cd.target$NumResponse = as.numeric(ifelse(cd.target$Response == "0",0,1))
-m = brm(NumResponse ~ SentenceType +  (1 | ID) + (1 + SentenceType | Adj) + (1 + SentenceType | workerid), 
+m = brm(NumResponse ~ SentenceType +  (1 | ID) + (1 + SentenceType | workerid) + (1 + SentenceType | workerid), 
         data = cd.target, seed=42, family=bernoulli())
 summary(m)
 plot(m, pars = c("SentenceType"))
+
