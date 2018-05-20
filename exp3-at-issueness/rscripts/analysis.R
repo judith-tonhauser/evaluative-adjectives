@@ -106,4 +106,10 @@ m = brm(NumResponse ~ SentenceType +  (1 | ID) + (1 + SentenceType | workerid) +
         data = cd.target, seed=42, family=bernoulli())
 summary(m)
 plot(m, pars = c("SentenceType"))
+plot(m, pars = c("workerid"))
+plot(m, pars = c("ID"))
 
+# sentence type effect:
+fixef(m)["SentenceTypeEAS_f", ]
+# posterior probability of sentence type beta > 0
+mean(posterior_samples(m, pars = "b_SentenceType") > 0)
