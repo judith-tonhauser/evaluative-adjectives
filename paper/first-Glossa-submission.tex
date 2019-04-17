@@ -58,38 +58,34 @@
 \newcommand{\citetpos}[1]{\citeauthor{#1}'s (\citeyear{#1})}
 
 
-%From Mandy conversation:
-%- add sentence on p.15 that this meaning is not the final version
-%- section 3.2: more nuanced discussion about whether previous analyses assume that prejacent is entailed
-%- unacceptable because contradictory: no imaginable circumstance where not-prejacent but S
-%- 23c is odd for mandy, perhaps need footnote
-%- "will" is part of the prejacent for judging the entailments in 23
-%- Mandy wants "enough" even in positive example 23b so "enough" has nothing to do with negation or projection
+\title{Evaluative adjective sentences: \\ A question-based analysis of projection}
+
+%\thanks{For helpful comments and critical feedback, we thank David Beaver, Ashwini Deo, Lauri Karttunen, Stanley Peters, Craige Roberts,
+%Stephanie Solt and the audiences at the following venues: the 6th meeting of the DFG Network
+%{\em Questions in Discourse} at the University of G\"ottingen, 
+%the University of Stuttgart, the 16th Sklarska Poreba workshop, the
+%Redrawing Pragmasemantic Borders workshop at the University of
+%Groningen, the University of Cologne, Oxford University, the University of T\"ubingen,  the University of G\"ottingen, the {\em
+%Experimental Pragmatics} 2015 conference in Chicago, The Ohio State
+%University and Cornell University. We thank Willy Cheung for his assistance with the corpus study and Timo Roettger for consultation on the Bayesian regression analysis. We gratefully acknowledge
+%financial support from the {\em National Science Foundation} (grants
+%BCS-0952571 and BCS-1452674), the Alexander von Humboldt Foundation and the Ohio State
+%University College of Arts and Sciences Targeted Investment in
+%Excellence initiative.}}
+
+\author{}
+%\author[$\circ$]{Judith Tonhauser}
+%\author[$\bullet$]{Judith Degen}
+%\author[$\circ$]{Marie-Catherine de Marneffe}
+%\author[$\star$]{Mandy Simons}
+%
+%\affil[$\circ$]{The Ohio State University}
+%\affil[$\bullet$]{Stanford University}
+%\affil[$\star$]{Carnegie Mellon University}
+%
+%\renewcommand\Authands{ and }
 
 
-\title{Evaluative adjective sentences: \\ A question-based analysis of projection\thanks{For helpful comments and critical feedback, we thank David Beaver, Ashwini Deo, Lauri Karttunen, Stanley Peters, Craige Roberts,
-Stephanie Solt and the audiences at the following venues: the 6th meeting of the DFG Network
-{\em Questions in Discourse} at the University of G\"ottingen, 
-the University of Stuttgart, the 16th Sklarska Poreba workshop, the
-Redrawing Pragmasemantic Borders workshop at the University of
-Groningen, the University of Cologne, Oxford University, the University of T\"ubingen,  the University of G\"ottingen, the {\em
-Experimental Pragmatics} 2015 conference in Chicago, The Ohio State
-University and Cornell University. We thank Willy Cheung for his assistance with the corpus study and Timo Roettger for consultation on the Bayesian regression analysis. We gratefully acknowledge
-financial support from the {\em National Science Foundation} (grants
-BCS-0952571 and BCS-1452674), the Alexander von Humboldt Foundation and the Ohio State
-University College of Arts and Sciences Targeted Investment in
-Excellence initiative.}}
-
-\author[$\circ$]{Judith Tonhauser}
-\author[$\bullet$]{Judith Degen}
-\author[$\circ$]{Marie-Catherine de Marneffe}
-\author[$\star$]{Mandy Simons}
-
-\affil[$\circ$]{The Ohio State University}
-\affil[$\bullet$]{Stanford University}
-\affil[$\star$]{Carnegie Mellon University}
-
-\renewcommand\Authands{ and }
 
 \newcommand{\jt}[1]{\textbf{\color{blue}JT: #1}}
 \newcommand{\jd}[1]{\textbf{\color{green}[jd: #1]}} 
@@ -102,9 +98,10 @@ Excellence initiative.}}
 
 \maketitle
 
+% length at beginning of revisions: 27,235 (monterrey), main body: 20,803
+% length at end of revisions
+
 \begin{abstract}
-
-
 
 Evaluative adjective sentences are standardly analyzed as presupposing the prejacent: for instance, {\em Kim wasn't smart to
 watch the movie} is taken to presuppose that Kim watched the movie
@@ -164,7 +161,7 @@ junkyard in the dark and get hurt.
 
 \end{xlist} \end{exe} 
 
-We discuss below why such examples are problematic for analyses according to which the prejacent is a presupposition. But we first need to mention that even though all native speakers of American English appear to be able to retrieve the intended interpretations of examples like (\ref{nat}), a sizeable portion strongly prefers to realize such interpretations with variants that includes {\em enough}, as in {\em I wasn't stupid enough to go stumbling through the junkyard in the dark} for (\ref{nat}b); see also \citealt{karttunen2013} and \citealt{karttunen-etal2014} for this observation. Our goal in this paper is to analyze the interpretation of EASs and we assume that all native speakers of American English have access to both interpretations, that is, an interpretation according to which the prejacent projects, as in (\ref{f2}), and an interpretation according to which it doesn't project, as in (\ref{nat}). Evidence that examples in which the prejacent does not project are part of the productive language use of some native speakers of American English comes from the existence of naturally occurring examples like (\ref{nat}); further  such examples are presented in this paper. Additional evidence comes from the fact that the audiences to which this research was presented over the years always included native speakers that judged examples like (\ref{nat}) to be perfectly acceptable. More systematic evidence for the existence of such speakers comes from the acceptability rating study presented in Appendix \ref{s-acc}: of the 94 self-reported native speakers of American English that participated in the study, about 20-30\% judged negated evaluative adjective sentences without {\em enough} to be acceptable under a non-projecting interpretation of the prejacent. We return to the observed variation among native speakers of American English in section \ref{s5}.
+We discuss below why such examples are problematic for analyses according to which the prejacent is a presupposition. But we first need to mention that there is variation in the population of native speakers of American English: whereas all such speakers are able to interpret EASs in which the prejacent does not project, i.e., are able to retrieve the intended interpretations of examples like (\ref{nat}), a sizeable portion strongly prefers to realize such interpretations with variants that includes {\em enough}, as in {\em I wasn't stupid enough to go stumbling through the junkyard in the dark} for (\ref{nat}b); see also \citealt{karttunen2013} and \citealt{karttunen-etal2014} for this observation. The ability of native speakers of American English to retrieve not just the projecting but also the non-projecting interpretation is necessitated by  the fact that EASs in which the prejacent does not project are part of American English, as evidenced by the existence of naturally occurring examples like (\ref{nat}); further  such examples are presented in this paper. Additional evidence comes from the fact that there are native speakers who judge EASs in which the prejacent does not project to be perfectly acceptable\footnote{The audiences to which this research was presented over the years always included native speakers that judged examples like (\ref{nat}) to be acceptable. More systematic evidence for the existence of such speakers comes from the acceptability rating study presented in Appendix \ref{s-acc}: of the 94 self-reported native speakers of American English that participated in the study, about 20-30\% judged negated evaluative adjective sentences without {\em enough} to be acceptable under a non-projecting interpretation of the prejacent.} and who produce examples like (\ref{nat}). In short, given that EASs in which the prejacent does not project are part of American English, we assume that all native speakers of American English are able to retrieve both interpretations even if they might not produce EASs in which the prejacent does not project. Our goal in this paper is to analyze the interpretation of EASs; we return to the observed variation among native speakers of American English in section \ref{s5}.
 
 To account for examples like (\ref{nat}), in which the prejacent is not a commitment of the speaker, presuppositional analyses appeal to local accommodation, a process whereby a presupposition is added to a local context, such as the context created by negation: presuppositions can be locally accommodated if adding the presupposition to the common ground of the interlocutors (a process known as global accommodation) would result in a contradiction, uninformativity or problems with
 binding (\citealt{heim82,vds92}). In example (\ref{nat}a), for instance, the prejacent is locally accommodated under negation because globally accommodating the prejacent in the common ground would result in a contradiction: the prejacent is that the speaker lived close to their parents, but, according to the context, the closest that the speaker lived to their parents was when the speaker lived in Denver, Colorado, i.e., about 300 miles (480 km) away from their parents in Garden City, Kansas. The prejacent is correctly predicted to be locally accommodated in (\ref{nat}a), i.e., does not become a commitment of the speaker.
@@ -200,13 +197,17 @@ According to \citepos{barker02} dynamic semantic analysis, the update effect of 
 \end{exe}
 The lexical entry in (\ref{lex}a) predicts that an utterance of the NEAS in (\ref{f2}a) presupposes that Feynman danced on the table and asserts that it is not the case that for Feynman to dance on the table would be stupid. What follows from the presupposed and the asserted content, according to \citealt[248]{karttunen-etal2014}, is that it is not the case that Feynman dancing on the table was stupid, i.e., what we have called the evaluation. In contrast, the lexical entry in (\ref{lex}b) predicts that an utterance of the NEAS in (\ref{nat}b) presupposes that for the speaker to stumble through the junkyard would be stupid and for the speaker to not stumble through the junkyard would not be stupid, and asserts that it is not the case that what the speaker did about stumbling through the junkyard was stupid. Thus, what we have called the evaluation, that the speaker stumbling through the junkyard would be stupid, is part of the presupposed content under \citepos{karttunen-etal2014} analysis. That the prejacent is negated (the speaker didn't stumble through the junkyard) follows, according to \citealt[249]{karttunen-etal2014}, from what is presupposed and what is asserted.
 
-\citepos{karttunen-etal2014} analysis improves over previous analyses because it is able to derive both attested interpretations. But the analysis comes at a cost: first, evaluative adjectives are systematically ambiguous, and, second, as we argue in section \ref{s3}, it misses out on an empirical generalization about how common ground information  influences the interpretation of EASs. In this paper, we develop an analysis of EASs that accounts for the two interpretations with a single lexical entry for evaluative adjectives. The crux of the analysis is that evaluative adjectives do not lexically specify that the prejacent is a presupposition. In section \ref{s2}, we show, based on a study of naturally occurring NEASs, that the prejacent is not highly projective. We take this to provide empirical support for not analyzing the prejacent as a lexically-specified presupposition. In section \ref{s3}, we present an analysis of EASs according to which the projectivity of the prejacent of an utterance in which the evaluative adjective is embedded under an entailment-canceling operator is predicted by the extent to which the prejacent is at-issue with respect to the Discourse Question addressed by the utterance. We test three predictions of the analysis in section \ref{s4} and discuss two open issues in section \ref{s5}. The paper concludes in section \ref{s6}.
+\citepos{karttunen-etal2014} analysis improves over previous analyses because it is able to derive both attested interpretations. But the analysis comes at a cost: first, evaluative adjectives are systematically ambiguous, and, second, as we argue in section \ref{s3}, it misses out on an empirical generalization about how common ground information  influences the interpretation of EASs. {\bf  IS IT REALLY THE CASE THAT THEY MISS OUT ON THIS GENERALIZATION: IF CG SPECIFIES THAT IT IS FORTUNATE TO WIN THE LOTTERY, THEN ONE LEXICAL ENTRY IS MORE LIKELY} In this paper, we develop an analysis of EASs that accounts for the two interpretations with a single lexical entry for evaluative adjectives. The crux of the analysis is that evaluative adjectives do not lexically specify that the prejacent is a presupposition. In section \ref{s2}, we show, based on a study of naturally occurring NEASs, that the prejacent is not highly projective. We take this to provide empirical support for not analyzing the prejacent as a lexically-specified presupposition. In section \ref{s3}, we present an analysis of EASs according to which the projectivity of the prejacent of an utterance in which the evaluative adjective is embedded under an entailment-canceling operator is predicted by the extent to which the prejacent is at-issue with respect to the Discourse Question addressed by the utterance. We test three predictions of the analysis in section \ref{s4} and discuss two open issues in section \ref{s5}. The paper concludes in section \ref{s6}.
+
+{\bf We now clarify in the introduction that we develop a question-based analysis of EAS to capture projection variability observed for the prejacent of EAS, but that it is motivated to conventionally specify the projectivity of other content.}
 
 \section{Experiment 1: Projectivity of the prejacent in naturally occurring NEAS}\label{s2}
 
-\citet{karttunen-etal2014} provided naturally occurring examples that showed that the prejacent of NEASs need not project. The goal of the study we present in this section was to more systematically explore how projective the prejacent is in naturally occurring NEAS. Following \citealt{tbd-variability}, we assume that projectivity is a gradient property of utterance content: the more the speaker or author of the utterance is taken to be committed to the truth of an utterance content, the more projective the content is. To explore the projectivity of the prejacent, native speakers of American English were presented with naturally occurring NEAS and asked to rate the projectivity of the prejacent.\footnote{\label{f-git}The
-materials, data and the R code for generating the figures and analyses of the experiments reported on in this paper are available at
-\url{https://github.com/judith-tonhauser/evaluative-adjectives}.} 
+{\bf The main point here is to show that the prejacent is not very projective, at least in the corpus study we did. This motivates an analysis as not lexically specified presupposition. Only present graph and examples in section 1, move rest to appendix.}
+
+\citet{karttunen-etal2014} provided naturally occurring examples that showed that the prejacent of NEASs need not project. The goal of the study we present in this section was to more systematically explore how projective the prejacent is in naturally occurring NEAS. Following AUTHORS 2018, we assume that projectivity is a gradient property of utterance content: the more the speaker or author of the utterance is taken to be committed to the truth of an utterance content, the more projective the content is. {\bf Elaborate here, along the lines of the JoS paper, why projectivity is assumed to be gradient and what that means. Elaborate here or later that at-issueness is also a gradient property of utterance content.} To explore the projectivity of the prejacent, native speakers of American English were presented with naturally occurring NEAS and asked to rate the projectivity of the prejacent.\footnote{\label{f-git}The
+materials, data and the R code for generating the figures and analyses of the experiments reported on in this paper are available at {\tt [name of GitHub repository]}.}
+%\url{https://github.com/judith-tonhauser/evaluative-adjectives}.} 
 
 \subsection{Methods}
 
@@ -222,7 +223,7 @@ fortunate, lucky, brave, polite, mean, foolish} and {\em rude}.
 \end{exe}
 We limited ourselves to examples from the American English part of the EnTenTen corpus (region: Am) and to examples with referential subjects. We did not find examples for the adjectives {\em polite, brave} and {\em rude}. For adjectives with more than 10 pages of results, we extracted all relevant examples from the first 10 pages and then extracted a random selection of examples from the remaining pages. The final set of target stimuli consisted of 59 NEAS with preceding and following context sentences that the first author judged to be relevant to understanding the NEAS (29 with past tense, 27 with non-past tense and 3 with {\em will}).
 
-Each target stimulus was attributed to an author who was identified by name, as shown for the sample stimuli in (\ref{target1}). As shown in the `Question to participants' presented with each stimulus in (\ref{target1}), we used the `certain that' diagnostic for projectivity to assess whether participants took the author to be committed to the prejacent, i.e., whether the prejacent projects over negation. For other applications of the `certain that' diagnostic for projection see \citealt{tonhauser-salt26,djaerv-bacovcin-salt27,stevens-etal2017} and \citealt{tbd-variability}. In these `Questions to participants', the prejacent was realized as the finite complement clause of {\em certain}. The tense of the finite clause that realized the prejacent was determined by the temporal and aspectual properties of the
+Each target stimulus was attributed to an author who was identified by name, as shown for the sample stimuli in (\ref{target1}). As shown in the `Question to participants' presented with each stimulus in (\ref{target1}), we used the `certain that' diagnostic for projectivity to assess whether participants took the author to be committed to the prejacent, i.e., whether the prejacent projects over negation. For other applications of the `certain that' diagnostic for projection see \citealt{tonhauser-salt26,djaerv-bacovcin-salt27,stevens-etal2017} and AUTHORS 2018. In these `Questions to participants', the prejacent was realized as the finite complement clause of {\em certain}. The tense of the finite clause that realized the prejacent was determined by the temporal and aspectual properties of the
 NEAS: it was past tense for past tense NEAS, as in (\ref{target1}a), and future tense for future tense NEAS, as in (\ref{target1}b); for non-past tense NEAS, the finite clause that realized the prejacent was realized in the non-past tense if the eventuality denoted by the prejacent was
 stative, as in (\ref{target1}c), and a disjunction of a past tense and a future tense verb if the prejacent was eventive, as in (\ref{target1}d).
 
@@ -382,7 +383,7 @@ to get to by logging in to a site or service.   \hfill {\bf [2.2]}
 
 \end{exe}
 
-In sum, our study of naturally occurring NEASs shows that the prejacent is not highly projective. These findings converge with those of \citet{tbd-variability}, who studied the projectivity of a variety of utterance contents and found that the prejacent of four (constructed) polar interrogative EASs with {\em stupid} was significantly less projective than the content of the clausal complement of the emotive predicate {\em be annoyed} and the cognitive predicate {\em know}. In the next section, we develop an analysis according to which the projectivity of the prejacent is not due to its lexical status as a presupposition but instead derived from the question that the utterance of the EAS is taken to address. 
+In sum, our study of naturally occurring NEASs shows that the prejacent is not highly projective. These findings converge with those of AUTHORS (2018), who studied the projectivity of a variety of utterance contents and found that the prejacent of four (constructed) polar interrogative EASs with {\em stupid} was significantly less projective than the content of the clausal complement of the emotive predicate {\em be annoyed} and the cognitive predicate {\em know}. In the next section, we develop an analysis according to which the projectivity of the prejacent is not due to its lexical status as a presupposition but instead derived from the question that the utterance of the EAS is taken to address. 
  
 
 \section{A question-based analysis of the projectivity of the prejacent}\label{s3}
@@ -390,6 +391,10 @@ In sum, our study of naturally occurring NEASs shows that the prejacent is not h
 In this section, we develop an analysis according to which the projectivity of the prejacent of an utterance of an EAS is derived from its status relative to the question addressed by the utterance. Specifically, we propose that the prejacent projects when it is not at-issue with respect to the question addressed by the utterance (see, e.g., \citealt{brst-salt10,brst-ar,best-question}). To understand which questions EASs can address, we first consider the lexical entailments of EASs.
 
 \subsection{Lexical entailments of evaluative adjective sentences}\label{s31}
+
+{\bf say that both prejacent and generalization can be new information, i.e., not associated with SCF}
+
+{\bf clarify in this section that these are entailments but they may still project, i.e., they are not regular entailments. also point to assumption in literature that some presuppositions are entailed by affirmative sentences. And Abrusan's analysis and Anand and Hacquard's assumption}
 
 We propose that an unembedded EAS has (at least) two lexical entailments: the prejacent and what we refer to as the `generalization'. As shown in (\ref{ent}), the generalization is timeless and the tense of the EAS ({\sc tense}) determines the temporal reference of the prejacent.
 
@@ -405,6 +410,17 @@ to take what he can get. \\ ({\em http://www.sportsworldreport.com/articles/2899
 \ex Generalization: In VPing NP is/would be Adj
 
 \ex Prejacent: NP VP{\sc .tense}
+
+\ex {\bf give more precise characterization of prejacent and generalization, e.g., using logical formulas and drawing on Barker's semantics for the evaluative adjectives}
+
+Feynman was stupid to dance on the table
+
+Generalization: $stupid'(dance.on.table', f)$ ``the degree to which Feynman dancing on the table at some time is stupid is higher than the contextual standard for {\em stupid}''
+
+
+Prejacent: $dance.on.table'(f,rt)$
+
+Evaluation: $dance.on.table'(f,rt) \wedge stupid'(dance.on.table', f)$, i.e., Feynman was stupid to dance on the table
 
 \end{xlist}
 \end{exe}
@@ -462,7 +478,7 @@ Consider, for instance, the content of the clausal complement of {\em discover} 
 \end{xlist}
 \end{exe}
 
-The examples in (\ref{ai}) illustrate four Discourse Questions that utterances of EASs can address. These Discourse Questions show that both lexical entailments of EASs, the prejacent and the generalization, can be at-issue. The Discourse Questions in (\ref{ai}a) and (\ref{ai}b) are about the prejacent: both the question of whether Sam got a ticket in (\ref{ai}a) and who got a ticket in (\ref{ai}b) are answered by the prejacent of B's utterances, that Sam got a ticket.\footnote{Some native speakers of American English may not judge B's utterances in (\ref{ai}a) and (\ref{ai}b) to be acceptable and prefer versions with {\em enough}: {\em She was smart enough to buy one the day they went on sale}. We hypothesize that such judgments of unacceptability are due to such speakers dispreferring EAS in which the prejacent is at-issue. Given the hypothesis we advance below, that the prejacent projects to the extent that it is not at-issue, we expect such speakers to also judge NEAS like (\ref{nat}) in which the prejacent does not project to be unacceptable. Crucially, however, even speakers who prefer to realize (\ref{ai}a) and (\ref{ai}b) with {\em enough} can retrieve the intended interpretations of the variants without {\em enough}.} Thus, in (\ref{ai}a) and (\ref{ai}b), the prejacent is at-issue and the generalization, that in buying a ticket the day the tickets went on sale Sam is be smart, is not at-issue. The Discourse Questions in (\ref{ai}c) and (\ref{ai}d), on the other hand, are not about the prejacent:  both the question of how Sam got a ticket in (\ref{ai}c) and whether Sam was smart to buy a ticket the day they went on sale in (\ref{ai}d) are not answered by the prejacent of B's utterances, that Sam got a ticket, but by the generalization, that in buying a ticket the day the tickets went on sale Sam is smart. Thus, in (\ref{ai}c) and (\ref{ai}d), the generalization is at-issue and the prejacent is not at-issue.
+The examples in (\ref{ai}) illustrate four Discourse Questions that utterances of EASs can address. These Discourse Questions show that both lexical entailments of EASs, the prejacent and the generalization, can be at-issue. The Discourse Questions in (\ref{ai}a) and (\ref{ai}b) are about the prejacent: both the question of whether Sam got a ticket in (\ref{ai}a) and who got a ticket in (\ref{ai}b) are answered by the prejacent of B's utterances, that Sam got a ticket.\footnote{Some native speakers of American English would prefer to produce B's utterances in (\ref{ai}a) and (\ref{ai}b) with {\em enough}: {\em She was smart enough to buy one the day they went on sale}. We hypothesize that such judgments of unacceptability are due to such speakers dispreferring EAS in which the prejacent is at-issue. Given the hypothesis we advance below, that the prejacent projects to the extent that it is not at-issue, we expect such speakers to also judge NEAS like (\ref{nat}) in which the prejacent does not project to be unacceptable. Crucially, as discussed in section \ref{s1}, even speakers who prefer to realize (\ref{ai}a) and (\ref{ai}b) with {\em enough} can retrieve the intended interpretations of the variants without {\em enough}.} Thus, in (\ref{ai}a) and (\ref{ai}b), the prejacent is at-issue and the generalization, that in buying a ticket the day the tickets went on sale Sam is be smart, is not at-issue. The Discourse Questions in (\ref{ai}c) and (\ref{ai}d), on the other hand, are not about the prejacent:  both the question of how Sam got a ticket in (\ref{ai}c) and whether Sam was smart to buy a ticket the day they went on sale in (\ref{ai}d) are not answered by the prejacent of B's utterances, that Sam got a ticket, but by the generalization, that in buying a ticket the day the tickets went on sale Sam is smart. Thus, in (\ref{ai}c) and (\ref{ai}d), the generalization is at-issue and the prejacent is not at-issue.
 
 \begin{exe}
 \ex\label{ai}
@@ -501,13 +517,13 @@ The examples in (\ref{ai}) illustrate four Discourse Questions that utterances o
 \end{xlist}
 \end{exe}
 
-Identifying which utterance content is at-issue is critical not only to understanding what the utterance is about, but also because of the connection between at-issueness and projectivity (e.g., \citealt{potts05,brst-salt10,best-question,brst-ar}). For EAS, identifying whether the prejacent or the generalization are at-issue thus also plays a role in identifying whether the prejacent projects, as we discuss next.
+Identifying which utterance content is at-issue is critical not only to understanding what the utterance is about, but also because of the connection between at-issueness and projectivity (e.g., \citealt{potts05,brst-salt10,best-question,brst-ar}, AUTHORS 2018). For EAS, identifying whether the prejacent or the generalization are at-issue thus also plays a role in identifying whether the prejacent projects, as we discuss next.
 
 \subsection{The prejacent projects when it is not at-issue with respect to the Discourse Question}
 
 As mentioned above, we do not assume that the prejacent is lexically specified as a presupposition. Rather, we propose that the projectivity of the prejacent of an utterance of an EAS is derived from the discourse status of the prejacent. Specifically, we argue that the prejacent projects if and only if it is not at-issue with respect to the Discourse Question addressed by the utterance. 
 
-To illustrate the proposal, consider the examples in (\ref{ai2}a) and (\ref{ai2}b), where B utters NEASs. The prejacent is at-issue in (\ref{ai2}a) because A's interrogative utterance, assumed to be the Discourse Question, is about the prejacent. Thus, according to our proposal, the prejacent of B's utterance in (\ref{ai2}a) is predicted to not project: accordingly, B's utterance means that Sam didn't buy a ticket the day they went on sale (the prejacent does not project) and that buying a ticket the day they went on sale would have been smart for Sam. In (\ref{ai2}b), on the other hand, A's interrogative utterance, is about the generalization. Thus, the prejacent of B's utterance is not at-issue and, according to our proposal, is predicted to project. Accordingly, B's utterance is interpreted to mean that Sam bought a ticket the day they went on sale and that Sam buying a ticket the day they went on sale wasn't smart. 
+To illustrate the proposal, consider the minimal pair in (\ref{ai2}a) and (\ref{ai2}b), where B utters the same NEAS, modulo whether the subject is a pronoun or a proper name. The prejacent of this NEAS is at-issue in (\ref{ai2}a) because A's interrogative utterance, assumed to be the Discourse Question, is about the prejacent. Thus, according to our proposal, the prejacent of B's utterance in (\ref{ai2}a) is predicted to not project: accordingly, B's utterance means that Sam didn't buy a ticket the day they went on sale (the prejacent does not project) and that buying a ticket the day they went on sale would have been smart for Sam. In (\ref{ai2}b), on the other hand, A's interrogative utterance, is about the generalization. Thus, the prejacent of B's utterance is not at-issue and, according to our proposal, is predicted to project. Accordingly, B's utterance is interpreted to mean that Sam bought a ticket the day they went on sale and that Sam buying a ticket the day they went on sale wasn't smart. 
 
 
 \begin{exe}
@@ -517,21 +533,27 @@ To illustrate the proposal, consider the examples in (\ref{ai2}a) and (\ref{ai2}
 \ex
 \begin{xlist}
 \exi{A:} The show was sold out. Did Sam get a ticket?
-\exi{B:} She wasn't smart to buy one the day they went on sale. (So, she didn't go to the show.)
+\exi{B:} She wasn't smart to buy a ticket the day they went on sale. (So, she didn't go to the show.)
 \end{xlist}
 
 \ex
 \begin{xlist}
-\exi{A:} Was Sam smart to buy a ticket for the show the day the tickets went on sale? The price would have gone down after a few days!
 
-\exi{B:} Sam wasn't smart to buy one the day they went on sale. The price indeed went down after a few days.
+\exi{A:} You keep criticizing Sam for doing some not-so-smart things. I'm not sure I agree. Can you give me an example (of something not-so-smart that Sam did)?
+
+
+\exi{B:} Sure! Remember the rock show we talked about? Sam wasn't smart to buy a ticket the day they went on sale. The price went down a couple of days later.
+
+%\exi{A:} Was Sam smart to buy a ticket for the show the day the tickets went on sale? The price would have gone down after a few days!
+%
+%\exi{B:} Sam wasn't smart to buy one the day they went on sale. The price indeed went down after a few days.
 
 \end{xlist}
 
 \end{xlist}
 \end{exe}
 
-As mentioned above, we take projectivity to be a gradient property of utterance content rather than a binary, categorical one. This assumption is motivated by experimental findings reported on in \citealt{tbd-variability} as well as the corpus study reported on in section \ref{s2}, which showed that authors can be taken to be committed to the prejacent of NEASs to varying degrees. Thus, we assume that what it means for projectivity to be a gradient property is that a reader's (or listener's) judgment that a content is projective to a certain extent means that the reader takes the author (or speaker) to be committed to the content to that extent. On this interpretation, projectivity being a gradient property is a consequence of author (or speaker) commitment being a gradient property (for discussion, see \citealt{tbd-variability}). Accordingly, to capture the relation between projectivity and not-at-issueness, we assume \citepos{tbd-variability} Gradient Projection Principle:\footnote{The question of why not-at-issue content projects has received several different answers. \citet{brst-salt10} proposed that not-at-issue content is not targeted by operators, such as negation, thereby resulting in the content projecting over such operators. In this paper, we follow \citet{abrusan2011} in assuming that the not-at-issue content is backgrounded and projects as a result of its discourse status.}
+As mentioned above, we take projectivity to be a gradient property of utterance content rather than a binary, categorical one. This assumption is motivated by experimental findings reported on in AUTHORS 2018 as well as the corpus study reported on in section \ref{s2}, which showed that authors can be taken to be committed to the prejacent of NEASs to varying degrees. Thus, we assume that what it means for projectivity to be a gradient property is that a reader's (or listener's) judgment that a content is projective to a certain extent means that the reader takes the author (or speaker) to be committed to the content to that extent. On this interpretation, projectivity being a gradient property is a consequence of author (or speaker) commitment being a gradient property (for discussion, see AUTHORS 2018). Accordingly, to capture the relation between projectivity and not-at-issueness, we assume AUTHORS' 2018 Gradient Projection Principle: {\bf SAY MORE HERE ABOUT HOW THIS PRINCIPLE IS MOTIVATED, TO ADDRESS REVIEWER}\footnote{{\bf move this into the main body and also mention potts 2005.} The question of why not-at-issue content projects has received several different answers. \citet{brst-salt10} proposed that not-at-issue content is not targeted by operators, such as negation, thereby resulting in the content projecting over such operators. In this paper, we follow \citet{abrusan2011} in assuming that the not-at-issue content is backgrounded and projects as a result of its discourse status.}
 
 \begin{exe}
 \ex\label{gpp} {\bf Gradient Projection Principle:} If content $C$ is expressed by a constituent embedded under an entailment-canceling operator, then $C$ projects to the 
@@ -539,7 +561,7 @@ extent that it is not at-issue.
 
 \end{exe}
 
-Preliminary evidence that the projectivity of the prejacent of EASs depends on its at-issueness comes from \citealt{tbd-variability}, who investigated the Gradient Projection Principle on the basis of 19 projective contents associated with American English expressions. \citet{tbd-variability} collected both projectivity and at-issueness ratings for these 19 contents, one of which was the prejacent of EASs with {\em stupid} embedded under the polar question operator. The four evaluative adjective polar questions studied in their work are given in (\ref{stupid2}):
+Preliminary evidence that the projectivity of the prejacent of EASs depends on its at-issueness comes from AUTHORS 2018, who investigated the Gradient Projection Principle on the basis of 19 projective contents associated with American English expressions. AUTHORS (2018) collected both projectivity and at-issueness ratings for these 19 contents, one of which was the prejacent of EASs with {\em stupid} embedded under the polar question operator. The four evaluative adjective polar questions studied in their work are given in (\ref{stupid2}):
 
 \begin{exe}
 \ex\label{stupid2}
@@ -552,7 +574,7 @@ Preliminary evidence that the projectivity of the prejacent of EASs depends on i
 
 \ex Is Mary's daughter stupid to be biting her nails?
 
-\ex Is Richie stupid to be a stuntman? \hfill (\citealt{tbd-variability}, Appendix A)
+\ex Is Richie stupid to be a stuntman? \hfill (AUTHORS 2018, Appendix A)
 
 \end{xlist}
 
@@ -566,11 +588,11 @@ Figure \ref{f-corr} shows participants' projectivity ratings for the prejacents 
 
 \includegraphics[width=1\textwidth]{figures/Exp1a-subject-projai-stupid}
 
-\caption{Projectivity ratings against not-at-issueness ratings for the prejacent of the four polar question EASs in \citealt{tbd-variability}. Each dot represents one participant's ratings. Linear smoothers with 95\% confidence intervals overlaid.}
+\caption{Projectivity ratings against not-at-issueness ratings for the prejacent of the four polar question EASs in AUTHORS 2018. Each dot represents one participant's ratings. Linear smoothers with 95\% confidence intervals overlaid.}
 \label{f-corr}
 \end{figure}
 
-In \citepos{tbd-variability} experiment, the evaluative adjective polar questions in (\ref{stupid2}) were not presented as responses to interrogative utterances that made the Discourse Questions explicit. Rather, participants were asked to imagine that the polar questions were uttered by speakers who they overhear at a party. The absence of an explicit Discourse Question is, of course, not unusual and rather the norm in naturally occurring data. Given the importance of the Discourse Question to the interpretation of EASs, in particular the at-issueness of the prejacent, we need to understand how the Discourse Question of utterances not presented in response to an interrogative utterance is constrained. In this paper, we consider two cues to the Discourse Questions of utterances of EASs: the information structure of the utterance (section \ref{s331}) and the discourse status of the generalization (section \ref{s332}).\footnote{\citet{abrusan2011} proposed that entailments of utterances that are about the running time of the main event are the default main point, i.e., what we have referred to as the at-issue content. However, given Abrus\'an's notion of aboutness, both the prejacent and the generalization of EASs are about the running time of the main event. For instance, \citet[508]{abrusan2011} took the entailment of (i), that John solved the exercise, to be ``non-accidentally (i.e. necessarily) about the matrix event time''. By the same argument, the prejacent of (ii) would be about the matrix event time, which means that neither the prejacent nor the generalization are predicted by \citealt{abrusan2011} to be the default at-issue content of EASs.
+In AUTHORS' 2018 experiment, the evaluative adjective polar questions in (\ref{stupid2}) were not presented as responses to interrogative utterances that made the Discourse Questions explicit. Rather, participants were asked to imagine that the polar questions were uttered by speakers who they overhear at a party. The absence of an explicit Discourse Question is, of course, not unusual but rather the norm in naturally occurring data. Given the importance of the Discourse Question to the interpretation of EASs, in particular the at-issueness of the prejacent, we need to understand how the Discourse Question of utterances not presented in response to an interrogative utterance is constrained. In this paper, we consider two cues to the Discourse Questions of utterances of EASs: the information structure of the utterance (section \ref{s331}) and the discourse status of the generalization (section \ref{s332}).\footnote{\citet{abrusan2011} proposed that entailments of utterances that are about the running time of the main event are the default main point, i.e., what we have referred to as the at-issue content. However, given Abrus\'an's notion of aboutness, both the prejacent and the generalization of EASs are about the running time of the main event. For instance, \citet[508]{abrusan2011} took the entailment of (i), that John solved the exercise, to be ``non-accidentally (i.e. necessarily) about the matrix event time''. By the same argument, the prejacent of (ii) would be about the matrix event time, which means that neither the prejacent nor the generalization are predicted by \citealt{abrusan2011} to be the default at-issue content of EASs.
 
 
 
@@ -629,23 +651,23 @@ prominent.
 Question-answer congruence is straightforwardly modeled in an
 alternative semantics framework (see, e.g., \citealt{rooth85,rooth92}), which
 analyzes both the focus semantic meaning of the answer and the meaning of
-the question in terms of alternatives. In such a framework, the meanings
+the question in terms of alternatives. In such a framework, the (ordinary semantic) meanings
 of the questions in (\ref{qa1}) and (\ref{qa2}) are sets of propositions
 that are answers to the questions, as shown in (\ref{cong1}a) and
-(\ref{cong2}a), respectively. The focus
+(\ref{cong2}a), respectively (where the superscript {\em o} indicates `ordinary semantic meaning'). The focus
 semantic meanings of the answers in (\ref{qa1}J) and (\ref{qa2}J) are
 focus alternatives sets, i.e., sets of propositions derived by
 abstracting over the focused expressions, as shown in (\ref{cong1}b) and
-(\ref{cong2}b).
+(\ref{cong2}b), respectively (where the superscript {\em f} indicates `focus semantic meaning').
 
 \begin{exe}
 \ex\label{cong1}
 
 \begin{xlist}
 
-\ex \sem{(\ref{qa1}M)}{M,g} = \{David likes Turkish coffee, David likes Lebanese coffee, David likes Irish coffee\}
+\ex \sem{(\ref{qa1}M)}{o} = \{David likes Turkish coffee, David likes Lebanese coffee, David likes Irish coffee\}
 
-\ex \sem{(\ref{qa1}J)}{M,g} = \{David likes Turkish coffee, David likes Lebanese coffee, David likes Irish coffee, David likes cold coffee,\ldots\} 
+\ex \sem{(\ref{qa1}J)}{f} = \{David likes Turkish coffee, David likes Lebanese coffee, David likes Irish coffee, David likes cold coffee,\ldots\} 
 
 \end{xlist}
 
@@ -653,9 +675,9 @@ abstracting over the focused expressions, as shown in (\ref{cong1}b) and
 
 \begin{xlist}
 
-\ex \sem{(\ref{qa2}M)}{M,g} = \{David likes Turkish coffee, Craige likes Turkish coffee, Mandy likes Turkish coffee, Judith likes Turkish coffee\}
+\ex \sem{(\ref{qa2}M)}{o} = \{David likes Turkish coffee, Craige likes Turkish coffee, Mandy likes Turkish coffee, Judith likes Turkish coffee\}
 
-\ex \sem{(\ref{qa2}J)}{M,g} = \{David likes Turkish coffee, Craige likes Turkish coffee, Mandy likes Turkish coffee, Judith likes Turkish coffee, Adam likes Turkish coffee,\ldots\}
+\ex \sem{(\ref{qa2}J)}{f} = \{David likes Turkish coffee, Craige likes Turkish coffee, Mandy likes Turkish coffee, Judith likes Turkish coffee, Adam likes Turkish coffee,\ldots\}
 
 \end{xlist}
 
@@ -761,7 +783,7 @@ What is important to realize is that these Current Questions differ in their ent
 
 \ex CQ of (\ref{vp}a), a subset of (\ref{vp}b), entails that, in doing something, Sam was smart.
 
-\ex CQ of (\ref{np}a), a subset of (\ref{np}b), entails that somebody bought a ticket the day they went on sale and that, in buying a ticket the day they went on sale, somebody was smart.
+\ex CQ of (\ref{np}a), a subset of (\ref{np}b), entails that somebody bought a ticket the day they went on sale and that, in buying a ticket the day they went on sale, somebody was smart. {\bf THAT PERSON WAS SMART?}
 
 \ex CQ of (\ref{adj}a), a subset of (\ref{adj}b), entails that in buying a ticket the day they went on sale Sam had some property.
 
@@ -774,7 +796,18 @@ What it means for these propositions to be entailed by the Current Questions of 
 
 We are now ready to consider how the Current Question constrains the Discourse Question, which in turn determines the at-issueness of the prejacent.  Following Roberts 1998/2012\nocite{roberts98,roberts12}, we assume that the Current Question and the Discourse Question are part of a strategy of inquiry. Specifically, we assume that the Current Question is a subquestion of the Discourse Question: this means that a complete answer to the Current Question must contextually entail a partial answer to the Discourse Question. Crucially, what follows from this is that the Discourse Question must still be open, i.e., unanswered, at the time at which the utterance is made. 
 
-To illustrate how the Current Question constrains the Discourse Question, consider an utterance of the example in (\ref{aib}), which is presented with its focus alternative set. The Current Question, as a subset of this focus alternative set, entails that somebody bought a ticket the day they went on sale and that somebody buying a ticket the day they went on sale is smart. That is, when this utterance is made, what is already taken to be part of the common ground is that somebody bought a ticket the day they went on sale and that, in buying a ticket the day they went on sale, somebody was smart. Only some Discourse Questions are plausible, given this common ground information. In particular, both the Discourse Questions `Who got a ticket?' and `Did Sam get a ticket?' are plausible because both are unanswered given the entailments of the Current Question. On the other hand, Discourse Questions like `How did Sam get a ticket?' and `Was Sam smart to buy a ticket the day they went on sale?' are less plausible because what is common ground already answers these Discourse Questions.
+Discourse questions
+\begin{itemize}
+\exi{A:} The show was sold out. Did Sam get a ticket?
+
+\exi{A:} There were so few tickets for the show! Who got a ticket?
+
+\exi{A:} The tickets for the show sold out really quickly! How did Sam get a ticket?
+
+\exi{A:} Was Sam smart to buy a ticket for the show the day the tickets went on sale? The price would have gone down after a few days!
+\end{itemize}
+
+To illustrate how the Current Question constrains the Discourse Question, consider an utterance of the example in (\ref{aib}), which is presented with its focus alternative set. The Current Question, as a subset of this focus alternative set, entails that somebody bought a ticket the day they went on sale and that somebody buying a ticket the day they went on sale is smart. {\bf THAT PERSON WAS SMART?}  That is, when this utterance is made, what is already taken to be part of the common ground is that somebody bought a ticket the day they went on sale and that, in buying a ticket the day they went on sale, somebody was smart. {\bf THAT PERSON WAS SMART?} Only some Discourse Questions are plausible, given this common ground information. In particular, both the Discourse Questions `Who got a ticket?' and `Did Sam get a ticket?' are plausible because both are unanswered given the entailments of the Current Question. On the other hand, Discourse Questions like `How did Sam get a ticket?' and `Was Sam smart to buy a ticket the day they went on sale?' are less plausible because what is common ground already answers these Discourse Questions.
 
 \begin{exe}
 \ex\label{aib} {[}Sam]\foc{} was smart to buy a ticket the day they went on sale.
@@ -790,14 +823,14 @@ Next consider an utterance of the example in (\ref{aic}), again presented with i
 \end{exe}
 Because the plausible Discourse Questions of (\ref{aic}) are such that the prejacent of (\ref{aic}) is not at-issue, this means that the information structure of (\ref{aic}) provides a cue that the prejacent is not at-issue and the generalization, in turn, is at-issue.
 
-In sum, this section has illustrated how the focus marking of an utterance of an EAS constrains the Discourse Question of the utterance and, thereby, the at-issueness of the prejacent. For EASs that are embedded under an entailment-canceling operator, the focus marking of utterances of such EAS is thereby predicted to influence the projectivity of the prejacent.
+In sum, this section  illustrated how the focus marking of an utterance of an EAS constrains the Discourse Question of the utterance and, thereby, the at-issueness of the prejacent. For EASs that are embedded under an entailment-canceling operator, the focus marking of utterances of such EAS is thereby predicted to influence the projectivity of the prejacent.
 
 
 \subsubsection{The discourse status of the generalization}\label{s332}
 
 A second cue to the Discourse Question of an utterance of an EAS comes, we argue, from the discourse status of the generalization, specifically the strength of the inference from the common ground to the truth of the generalization.
 
- Our argument builds on a felicity requirement that is found in different guises in the literature: an utterance of an indicative sentence is felicitous only if the sentence is informative in the context in which it is uttered. \citet[144]{groenendijk1999}, for instance, formulates this as the requirement that indicative sentences be non-redundant. We assume here that an utterance of an indicative sentence is informative if its at-issue content is not already entailed by the common ground of the interlocutors prior to the utterance of the sentence. No such requirement exists for not-at-issue content: some not-at-issue content, like presuppositions, may be entailed by the common ground prior to utterance and other not-at-issue content, like conventional implicatures, may even be required to not be entailed, as argued in \citealt{potts05}. 
+ Our argument builds on a felicity requirement that is found in different guises in the literature: an utterance of an indicative sentence is felicitous only if the sentence is informative in the context in which it is uttered. \citet[144]{groenendijk1999}, for instance, formulates this as the requirement that indicative sentences be non-redundant. We assume here that an utterance of an indicative sentence is informative if its at-issue content is not already entailed by the common ground of the interlocutors prior to the utterance of the sentence. No such requirement exists for not-at-issue content: some not-at-issue content, like presuppositions, may be entailed by the common ground prior to utterance and other not-at-issue content, like conventional implicatures, may even be required to not be entailed, as argued in \citealt{potts05}. {\bf say that asserted content and conventional implicatures differ in at-issueness. also say that conventional implicatures are conventionally specified to be nai so not all informative content may be nai; non-redundancy only works in one direction; \citealt{potts05,murray2014}}
  Crucially, what follows from the felicity requirement is that the Discourse Question of an utterance of an indicative sentence cannot be about content that is entailed by the common ground because such a Discourse Question would render the utterance uninformative. This felicity requirement is captured by the principle in (\ref{principle1}).
  
 \begin{exe}
@@ -808,7 +841,7 @@ We argued in section \ref{s31} that the inference to the truth of the generaliza
 
 \begin{exe}
 
-\ex\label{principle} {\bf Gradient non-redundancy principle for at-issue content} \\ For utterance content $c$, the stronger the inference to the truth of $c$ from the common ground, the less likely is it that the Discourse Question of the utterance is about $c$, i.e., $c$ is less at-issue.
+\ex\label{principle} {\bf Gradient non-redundancy principle for at-issue content} \\ For utterance content $c$, the stronger the inference to the truth of $c$ from the common ground, the less likely is it that the Discourse Question of the utterance is about $c$, i.e., $c$ is less at-issue. {\bf ADD NOTE TO ENSURE THAT THIS, TOO, IS ONLY UNDERSTOOD AS A CONDITIONAL, NOT BI-CONDITIONAL}
 
 \end{exe}
 
@@ -1029,7 +1062,7 @@ A second goal of Exp.~2 was to explore the prediction of our analysis that the d
 
 \paragraph{Materials} Stimuli consisted of two-sentence discourses. In the target stimuli, the first sentence was a context sentence and the second sentence was a NEAS with one of the 10 evaluative adjectives already mentioned in section \ref{s2}: {\em stupid, smart, wise, fortunate, lucky, brave, polite, mean, foolish} and {\em rude}. For each NEAS, either the generalization or its negation follow from the common ground: the prejacent of the latter is expected to be more projective than the prejacent of the former.
 
-Whether the generalization or its negation follow from the common ground was manipulated in two ways. For stimuli in the `Content' condition, the content of the NEAS determined whether the generalization or its negation follow from the common ground. Sample stimuli are given in (\ref{cont}): the context sentences are identical and the two NEASs have distinct generalizations. In (\ref{cont}a), the generalization is that in losing her wallet Sue is fortunate, i.e., the negation of the generalization follows from the common ground, especially given that Sue was traveling in France. In (\ref{cont}b), the generalization is that in speaking French Sue is fortunate,  i.e., the generalization follows from the common ground, especially given that Sue was traveling in France. For stimuli in the `Context' condition, the context sentence determined whether the generalization of the NEAS or its negation follow from the common ground. Sample stimuli are given in (\ref{context}): the NEASs are identical and the context sentences differ. In (\ref{context}a), the generalization is that in prank-calling the police Jane is smart, i.e., the negation of the generalization follows from the common ground. In (\ref{context}b), the generalization is that in calling the police Jane is smart, given that she saw a man with a gun, i.e., the generalization follows from the common ground.
+Whether the generalization or its negation follow from the common ground was manipulated in two ways. For stimuli in the `Content' condition, the content of the NEAS determined whether the generalization or its negation follow from the common ground. Sample stimuli are given in (\ref{cont}): the context sentences are identical and the two NEASs have distinct generalizations. In (\ref{cont}a), the generalization is that in losing her wallet Sue is fortunate, i.e., the negation of the generalization follows from the common ground. {\bf CLARIFY HERE THAT GENERALIZATION IS OPPOSITE OF WORLD KNOWLEDGE!} In (\ref{cont}b), the generalization is that in speaking French Sue is fortunate,  i.e., the generalization follows from the common ground, especially given that Sue was traveling in France. For stimuli in the `Context' condition, the context sentence determined whether the generalization of the NEAS or its negation follow from the common ground. Sample stimuli are given in (\ref{context}): the NEASs are identical and the context sentences differ. In (\ref{context}a), the generalization is that in prank-calling the police Jane is smart, i.e., the negation of the generalization follows from the common ground. In (\ref{context}b), the generalization is that in calling the police Jane is smart, given that she saw a man with a gun, i.e., the generalization follows from the common ground.
 
 \begin{exe}
 \ex\label{cont} Sample stimuli in the Content condition 
@@ -1048,7 +1081,7 @@ Whether the generalization or its negation follow from the common ground was man
 \ex Jane saw a man with a gun. She wasn't smart to call the police. 
 \end{xlist}
 \end{exe}
-To assess the projectivity of the prejacent, participants were asked whether the prejacent is true,\footnote{This diagnostic for projectivity differs from the `certain that' diagnostic used in Exp.~1 in section \ref{s2}. Exp.~2 relied on a different diagnostic because it was run before the `certain that' diagnostic was developed. Under the assumption that participants only take the prejacent to be true if it follows from the two-sentence discourse, i.e., if the author of the two-sentence discourse is committed to the prejacent, we take the two diagnostics to be comparable in diagnosing projectivity. See \citealt{tbd-variability} for a discussion of additional diagnostics for projectivity.} e.g., `Did Sue lose her wallet?' in (\ref{cont}a), `Did Sue speak some French' in (\ref{cont}b), and `Did Jane call the police?' in (\ref{context}a) and (\ref{context}b).
+To assess the projectivity of the prejacent, participants were asked whether the prejacent is true,\footnote{This diagnostic for projectivity differs from the `certain that' diagnostic used in Exp.~1 in section \ref{s2}. Exp.~2 relied on a different diagnostic because it was run before the `certain that' diagnostic was developed. Under the assumption that participants only take the prejacent to be true if it follows from the two-sentence discourse, i.e., if the author of the two-sentence discourse is committed to the prejacent, we take the two diagnostics to be comparable in diagnosing projectivity. See AUTHORS 2018 for a discussion of additional diagnostics for projectivity.} e.g., `Did Sue lose her wallet?' in (\ref{cont}a), `Did Sue speak some French' in (\ref{cont}b), and `Did Jane call the police?' in (\ref{context}a) and (\ref{context}b).
 
 The experiment included, for each of the 10 evaluative adjectives, 3 pairs of target stimuli in the Content condition and 3 pairs of target stimuli in the Context condition, for a total of 60 pairs of target stimuli, i.e., a total of 120 target stimuli. We selected these 60 pairs of target stimuli from a total of 120 pairs of potential target stimuli for which we collected ratings in a norming study from native speakers of American English about whether the generalization or its negation follow from the common ground. For each evaluative adjective, we chose the 3 pairs of target stimuli in the Content and Context conditions for which the generalization and its negation most strongly followed from the common ground. The norming study is described in detail in Appendix \ref{a-norming} and the full set of stimuli for Exp.~2 is provided in Appendix \ref{a-Exp1}.
 
@@ -1121,10 +1154,10 @@ There was a significant main effect of the discourse status of the generalizatio
 
 \subsection{Experiment 3: At-issueness of the prejacent}\label{s43}
 
-This experiment tested the prediction in (\ref{pred}c): the stronger the inference to the truth of the generalization from the common ground, the more at-issue the prejacent is. The at-issueness diagnostic used in Exp.~3 relies on the assumption that at-issue and not-at-issue content differ in the extent to which it is up for debate and can be directly assented/dissented with. For previous uses of diagnostics that rely on this assumption see, e.g., \citealt{amaral-etal07,xue-onea11,murray2014,anderbois-etal2015,destruel-etal2015,tonhauser-sula6} and \citealt{syrett-koev2015}. The diagnostic we used in Exp.~3 is the same as that in \citepos{tbd-variability} Exps.~2. The 3-turn dialogue in (\ref{sure}) illustrates how the diagnostic was set up on the basis of the appositive content associated with nominal appositives. The speaker of the first turn, Debby, utters an indicative sentence with the target expression, here a nominal appositive, and thereby commits herself to various utterance contents, including the appositive content that Martha's new car is a BMW. The speaker of the second turn, Harry, utters the question {\em Are you sure?}, thereby challenging some content of Debby's utterance. In the third turn, Debby utters an indicative sentence in which the content to be diagnosed for at-issueness, here the appositive content of her first utterance, realizes the content of the clausal complement of {\em sure}, thereby identifying it as the content that Debby took the Harry to be challenging. 
+This experiment tested the prediction in (\ref{pred}c): the stronger the inference to the truth of the generalization from the common ground, the more at-issue the prejacent is. The at-issueness diagnostic used in Exp.~3 relies on the assumption that at-issue and not-at-issue content differ in the extent to which it is up for debate and can be directly assented/dissented with. For previous uses of diagnostics that rely on this assumption see, e.g., \citealt{amaral-etal07,xue-onea11,murray2014,anderbois-etal2015,destruel-etal2015,tonhauser-sula6} and \citealt{syrett-koev2015}. The diagnostic we used in Exp.~3 is the same as that in AUTHORS' 2018 Exps.~2. The 3-turn dialogue in (\ref{sure}) illustrates how the diagnostic was set up on the basis of the appositive content associated with nominal appositives. The speaker of the first turn, Debby, utters an indicative sentence with the target expression, here a nominal appositive, and thereby commits herself to various utterance contents, including the appositive content that Martha's new car is a BMW. The speaker of the second turn, Harry, utters the question {\em Are you sure?}, thereby challenging some content of Debby's utterance. In the third turn, Debby utters an indicative sentence in which the content to be diagnosed for at-issueness, here the appositive content of her first utterance, realizes the content of the clausal complement of {\em sure}, thereby identifying it as the content that Debby took the Harry to be challenging. 
 
 \begin{exe}
-\ex\label{sure} At-issueness diagnostic from \citealt{tbd-variability}
+\ex\label{sure} At-issueness diagnostic from AUTHORS 2018
 \begin{xlist}
 \exi{Debby:} Martha's new car, a BMW, was expensive.
 
@@ -1269,7 +1302,7 @@ methods \citep{Nicenboim2016}. In fact, when we fit regular binomial mixed effec
 
 In order to evaluate the evidence for an effect of discourse status, we report 95\% credible intervals and the posterior probability $P(\beta > 0)$ that the discourse status coefficient $\beta$ is greater than zero. A 95\% credible interval (CI) demarcates the range of values that comprise 95\% of probability mass of our posterior beliefs such that no value inside the CI has a lower probability than any point outside it \citep{Jaynes1976, Morey2016}. There is substantial evidence for an effect if zero is (by a reasonably clear margin) not included in the 95\% CI and $P(\beta > 0)$ is close to zero or one. Posterior probabilities tell us the probability that the parameter has a certain value, given the data and model (these probabilities are not frequentist $p$-values). In order to present statistics as close to widely used frequentist practices, and following \citealt{Nicenboim2016}, we defined an inferential criterion that seems familiar (95\%), but the strength of evidence should not be taken as having clear cut-off points (such as in a null-hypothesis significance testing framework).
 
-The model provided evidence for the predicted effect of the discourse status of the generalization on the at-issueness of the prejacent, such that  prejacents of EASs with generalizations that follow from the common ground were more likely to receive a `yes' rating than prejacents of EASs with neutral generalizations  (posterior mean $\beta$ = 1.29, 95\% CI={[}0.69,1.87{]}, $P(\beta > 0)$ = 1). This finding suggests that the prejacent of EASs with generalizations that follow from the common ground are more at-issue than that of EASs with neutral generalizations, as predicted by the analysis developed in section \ref{s3}.\footnote{The projective content of the four control stimuli in (\ref{proj}) differed in the extent to which they received `no' ratings (indicating not-at-issueness): 94\% (64 of 68) for the appositive content in (\ref{proj}a), 90\% (61 of 68 for the possession content in (\ref{proj}b), 75\% (51 of 68) for the content of the clausal complement of {\em be annoyed} in (\ref{proj}c) and 44\% (30 of 68) for the content of the clausal complement of {\em discover} in (\ref{proj}d). We can compare these findings with the findings reported for similar contents in \citealt{tbd-variability}, whose Exp.~2a used the same diagnostic for at-issueness, but participants gave ratings on a slider. Further differences between the two experiments is that \citealt{tbd-variability} included more than one item for each of the projective contents but only included EASs with {\em stupid}. With these caveats in mind, we can note a similarity in the findings of the two experiments: as in the experiment reported on here, \citet{tbd-variability} found that the possession content and appositive content were most not-at-issue (mean ratings of .83 and .82, respectively), followed by the content of the clausal complement of {\em be annoyed} (mean: .78) and the prejacent of EASs (mean: .7), and finally the content of the clausal complement of {\em discover} (mean .47). This finding suggests that the prejacent of EAS overall is not highly not-at-issue, which converges with the finding of the corpus study (section \ref{s2}) that the prejacent of NEAS is not highly projective.}
+The model provided evidence for the predicted effect of the discourse status of the generalization on the at-issueness of the prejacent, such that  prejacents of EASs with generalizations that follow from the common ground were more likely to receive a `yes' rating than prejacents of EASs with neutral generalizations  (posterior mean $\beta$ = 1.29, 95\% CI={[}0.69,1.87{]}, $P(\beta > 0)$ = 1). This finding suggests that the prejacent of EASs with generalizations that follow from the common ground are more at-issue than that of EASs with neutral generalizations, as predicted by the analysis developed in section \ref{s3}.\footnote{The projective content of the four control stimuli in (\ref{proj}) differed in the extent to which they received `no' ratings (indicating not-at-issueness): 94\% (64 of 68) for the appositive content in (\ref{proj}a), 90\% (61 of 68 for the possession content in (\ref{proj}b), 75\% (51 of 68) for the content of the clausal complement of {\em be annoyed} in (\ref{proj}c) and 44\% (30 of 68) for the content of the clausal complement of {\em discover} in (\ref{proj}d). We can compare these findings with the findings reported for similar contents in AUTHORS 2018, whose Exp.~2a used the same diagnostic for at-issueness, but participants gave ratings on a slider. Further differences between the two experiments is that AUTHORS 2018 included more than one item for each of the projective contents but only included EASs with {\em stupid}. With these caveats in mind, we can note a similarity in the findings of the two experiments: as in the experiment reported on here, AUTHORS (2018) found that the possession content and appositive content were most not-at-issue (mean ratings of .83 and .82, respectively), followed by the content of the clausal complement of {\em be annoyed} (mean: .78) and the prejacent of EASs (mean: .7), and finally the content of the clausal complement of {\em discover} (mean .47). This finding suggests that the prejacent of EAS overall is not highly not-at-issue, which converges with the finding of the corpus study (section \ref{s2}) that the prejacent of NEAS is not highly projective.}
 
 
 % Exp 2a Tonhauser, Beaver & Degen (Journal of Semantics)
@@ -1415,10 +1448,9 @@ We leave further explorations of the question of how to capture the variability 
 
 \section{Conclusions}\label{s6}
 
-This paper explored the projectivity of the prejacent of evaluative adjective sentences (EASs). We showed, based on a corpus study of naturally occurring NEASs, that the prejacent is not highly projective (see also \citealt{tbd-variability}). According to the analysis we developed, the prejacent of an utterance of an EAS projects to the extent that it is not at-issue with respect to the Discourse Question addressed by the utterance. The Discourse Question, we showed, is constrained by the information-structural focus of utterances of EASs as well as by the discourse status of the generalization. Three predictions of the analysis were empirically verified: i) the focus marking of naturally occurring NEASs differs depending on whether the prejacent projects, ii) the discourse status of the generalization influences the projectivity of the prejacent, and iii) the discourse status of the generalization influences the at-issueness of the prejacent. Our analysis, we argue, makes better predictions than that of, for instance, \citet{barker02} and \citet{oshima09b}, according to which the prejacent is a lexically-specified presupposition, and it is more parsimonious than that of \citet{karttunen-etal2014}, according to which evaluative adjectives are systematically ambiguous.
+This paper explored the projectivity of the prejacent of evaluative adjective sentences (EASs). We showed, based on a corpus study of naturally occurring NEASs, that the prejacent is not highly projective (see also AUTHORS 2018). According to the analysis we developed, the prejacent of an utterance of an EAS projects to the extent that it is not at-issue with respect to the Discourse Question addressed by the utterance. The Discourse Question, we showed, is constrained by the information-structural focus of utterances of EASs as well as by the discourse status of the generalization. Three predictions of the analysis were empirically verified: i) the focus marking of naturally occurring NEASs differs depending on whether the prejacent projects, ii) the discourse status of the generalization influences the projectivity of the prejacent, and iii) the discourse status of the generalization influences the at-issueness of the prejacent. Our analysis, we argue, makes better predictions than that of, for instance, \citet{barker02} and \citet{oshima09b}, according to which the prejacent is a lexically-specified presupposition, and it is more parsimonious than that of \citet{karttunen-etal2014}, according to which evaluative adjectives are systematically ambiguous.
 
 The question-based analysis of the projectivity of the prejacent of EASs developed in this paper contributes to our understanding of how content comes to be projective without being conventionally specified as a presupposition or a conventional implicature. In its reliance on information-structural focus and the question-based organization of discourse, our analysis has strong parallels with \citepos{abrusan2013} and \citepos{stevens-etal2017} analyses of the projective content of manner adverb utterances (like {\em Did Martha run quickly?}) and with \citepos{best-question} analysis of the projective content of utterances with {\em know} (like {\em Does Martha know that Harry is having a party?}). We do not believe that these kinds of analyses are empirically adequate for all kinds of projective content. We take, for instance, the requirement of the pronoun {\em she} that there is a uniquely salient antecedent discourse referent to be part of the conventionally coded content of the pronoun. Likewise, the projectivity of the appositive content of non-restrictive relative clauses may be best derived from a conventional specification of the discourse status of expressions (e.g., \citealt{potts05,murray2014}). Thus, one of the exciting challenges for future research on projective content is to identify, for any given projective content, whether its empirical properties warrant a non-lexical analysis of its projectivity. The empirical properties of the prejacent of EASs that were identified in this paper may provide guidance in this decision process.
-
 
 \appendix
 
