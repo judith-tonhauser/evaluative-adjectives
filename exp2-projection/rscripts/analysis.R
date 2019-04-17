@@ -10,8 +10,14 @@ library(tidyverse)
 library(ordinal)
 
 # load data
-load("../data/cd.RData")
+cd = read.csv(file="../data/cd.csv")
+# load("../data/cd.RData")
 
+# anonymize workerids and write to file
+# cd = cd %>% 
+#   mutate(workerid = as.factor(as.numeric(factor(workerid))))
+# write.csv(cd, file="../data/cd.csv",row.names = F,quote=F)
+       
 nrow(cd) #2144 (134 Turkers, each gave 16 judgments)
 summary(cd)
 
