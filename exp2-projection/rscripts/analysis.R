@@ -41,6 +41,49 @@ table(cd.target$Context)
 cd.target$item <- paste(cd.target$Context,cd.target$Adj,cd.target$VPinf,"-")
 table(cd.target$item)
 
+
+## paper plot like exp 3
+nrow(cd.target) #1340
+cd.target = cd.target %>%
+  mutate(condition = case_when(
+    Condition %in% c("CnC","CnD") ~ "content",
+    Condition %in% c("CxC","CxD") ~ "context",
+    TRUE ~ "other"
+  ))
+
+agr = cd.target %>%
+  mutate(Response = as.numeric(as.character(Response))) %>%
+  group_by(condition,ConDissonant) %>%
+  summarise(Mean=mean(Response),CILow=ci.low(Response),CIHigh=ci.high(Response)) %>%
+  ungroup() %>%
+  mutate(YMin=Mean-CILow,YMax=Mean+CIHigh)
+
+agr_item = cd.target %>%
+  mutate(Response = as.numeric(as.character(Response))) %>%
+  group_by(condition,ConDissonant,Adj) %>%
+  summarise(Mean=mean(Response))
+
+agr_item_left = agr_item %>%
+  filter(ConDissonant == "C", Adj %in% c("polite","rude","wise","stupid","foolish"))
+
+agr_item_right = agr_item %>%
+  filter(ConDissonant == "D", Adj %in% c("brave","lucky","mean","smart","fortunate"))
+
+ggplot(agr, aes(x=ConDissonant,y=Mean)) +
+  geom_bar(stat="identity") +
+  geom_bar(stat="identity",fill="grey90") +
+  theme(legend.position="none") +
+  geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.1) +
+  geom_line(data=agr_item, aes(x=ConDissonant,y=Mean,group=Adj,colour=Adj)) +
+  geom_text(data=agr_item_left, aes(label=Adj, colour = Adj),hjust=1.2,size=3) +
+  geom_text(data=agr_item_right, aes(label=Adj, colour = Adj),hjust=-.2,size=3) +
+  scale_x_discrete(name="Generalization",labels=c("generalization\nfollows","negation of\ngeneralization\nfollows")) +
+  scale_y_continuous(name="Mean certainty rating") +
+  facet_wrap(~condition)
+ggsave(f="../graphs/mean-certainty-ratings.pdf",height=4.5,width=6)
+
+
+### MODELS
 cd.target.content <- droplevels(subset(cd.target, cd.target$Condition == "CnC" | cd.target$Condition == "CnD"))
 nrow(cd.target.content) #668 = CnC + CnD
 
