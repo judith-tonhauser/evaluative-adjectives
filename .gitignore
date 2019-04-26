@@ -1,6 +1,7 @@
 */.RData
 */node_modules/
 paper/paper.pdf
+paper/paper-anon.pdf
 *.out
 *.bbl
 *.blg
