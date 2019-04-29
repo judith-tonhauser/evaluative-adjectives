@@ -9,6 +9,8 @@ source('helpers.R')
 library(tidyverse)
 library(ordinal)
 
+theme_set(theme_bw())
+
 # load data
 cd = read.csv(file="../data/cd.csv")
 # load("../data/cd.RData")
@@ -52,8 +54,8 @@ table(cd.target$item)
 nrow(cd.target) #1340
 cd.target = cd.target %>%
   mutate(condition = case_when(
-    Condition %in% c("CnC","CnD") ~ "content",
-    Condition %in% c("CxC","CxD") ~ "context",
+    Condition %in% c("CnC","CnD") ~ "Content",
+    Condition %in% c("CxC","CxD") ~ "Context",
     TRUE ~ "other"
   ))
 
@@ -83,7 +85,7 @@ ggplot(agr, aes(x=ConDissonant,y=Mean)) +
   geom_line(data=agr_item, aes(x=ConDissonant,y=Mean,group=Adj,colour=Adj)) +
   geom_text(data=agr_item_left, aes(label=Adj, colour = Adj),hjust=1.2,size=3) +
   geom_text(data=agr_item_right, aes(label=Adj, colour = Adj),hjust=-.2,size=3) +
-  scale_x_discrete(name="Generalization",labels=c("generalization\nfollows","negation of\ngeneralization\nfollows")) +
+  scale_x_discrete(name="Truth of generalization follows from common ground",labels=c("more likely","less likely")) +
   scale_y_continuous(name="Mean certainty rating") +
   facet_wrap(~condition)
 ggsave(f="../graphs/mean-certainty-ratings.pdf",height=4.5,width=6)
@@ -152,7 +154,7 @@ summary(contentOldYoung)
 #   OldYoungYoung                 0.4331     0.3453   1.254   0.2097    
 # ConDissonantD:OldYoungYoung  -0.7460     0.3269  -2.282   0.0225 *  
 #   ---
-#   Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+#   Signif. codes:  0 ???***??? 0.001 ???**??? 0.01 ???*??? 0.05 ???.??? 0.1 ??? ??? 1 
 # 
 # Threshold coefficients:
 #   Estimate Std. Error z value
@@ -191,7 +193,7 @@ summary(contentOldMiddleYoung)
 # ConDissonantD:OldMiddleYoungOld   -0.15407    0.49997  -0.308   0.7580    
 # ConDissonantD:OldMiddleYoungYoung -0.72434    0.38016  -1.905   0.0567 .  
 # ---
-#   Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+#   Signif. codes:  0 ???***??? 0.001 ???**??? 0.01 ???*??? 0.05 ???.??? 0.1 ??? ??? 1 
 # 
 # Threshold coefficients:
 #   Estimate Std. Error z value
@@ -229,7 +231,7 @@ summary(contextOldYoung)
 #   OldYoungYoung               -0.05568    0.36385  -0.153    0.878    
 # ConDissonantD:OldYoungYoung -0.16327    0.32557  -0.501    0.616    
 # ---
-#   Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+#   Signif. codes:  0 ???***??? 0.001 ???**??? 0.01 ???*??? 0.05 ???.??? 0.1 ??? ??? 1 
 # 
 # Threshold coefficients:
 #   Estimate Std. Error z value
@@ -268,7 +270,7 @@ summary(contextOldMiddleYoung)
 # ConDissonantD:OldMiddleYoungOld    -0.3016     0.4596  -0.656    0.512    
 # ConDissonantD:OldMiddleYoungYoung  -0.3234     0.3709  -0.872    0.383    
 # ---
-#   Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+#   Signif. codes:  0 ???***??? 0.001 ???**??? 0.01 ???*??? 0.05 ???.??? 0.1 ??? ??? 1 
 # 
 # Threshold coefficients:
 #   Estimate Std. Error z value
@@ -484,7 +486,7 @@ lmer(Response ~ (1|workerid), data = cd.noE, family="binomial")
 # Pr(>|z|)    
 # (Intercept)   <2e-16 ***
 #   ---
-#   Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
+#   Signif. codes:  0 ???***??? 0.001 ???**??? 0.01 ???*??? 0.05 ???.??? 0.1 ??? ??? 1 
 
 
 enough = table(cd.E$workerid,cd.E$Impl)

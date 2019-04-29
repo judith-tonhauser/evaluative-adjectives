@@ -7,6 +7,7 @@ setwd(this.dir)
 
 source('helpers.R')
 library(tidyverse)
+
 theme_set(theme_bw())
 
 # load clean data
@@ -33,7 +34,7 @@ table(t$SentenceType)
 # rename factor levels
 t$SentenceType <- factor(t$SentenceType, 
                             levels=c("Comp-of-Annoyed", "Comp-of-Discover","NomApp","PossNP","EAS_n","EAS_f"),
-                            labels=c("be_annoyed","discover","NomApp","possNP","neutral","follows from common ground"))
+                            labels=c("be_annoyed","discover","NomApp","possNP","less likely","more likely"))
 
 table(t$Adj)
 
@@ -64,14 +65,14 @@ ggplot(agr, aes(x=SentenceType,y=Response,fill=SentenceType)) +
   theme(legend.position="none") +
   geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.25,position=dodge) +
   geom_line(data=agr2, aes(x=SentenceType,y=Response,group=Adj,colour=Adj)) +
-  geom_text(data = subset(agr2, SentenceType == "neutral" & (Adj != "polite" & Adj != "wise" & Adj != "fortunate" & Adj != "foolish")), 
+  geom_text(data = subset(agr2, SentenceType == "less likely" & (Adj != "polite" & Adj != "wise" & Adj != "fortunate" & Adj != "foolish")), 
             aes(label = Adj, size=12, colour = Adj),hjust=1.3) +
-  geom_text(data = subset(agr2, SentenceType == "follows from common ground" & (Adj == "polite" | Adj == "wise" | Adj == "fortunate" | Adj == "foolish")), 
+  geom_text(data = subset(agr2, SentenceType == "more likely" & (Adj == "polite" | Adj == "wise" | Adj == "fortunate" | Adj == "foolish")), 
             aes(label = Adj, size=12, colour = Adj),hjust=-.2) +
-  scale_x_discrete(name="Generalization") +
+  scale_x_discrete(name="Truth of generalization follows from common ground") +
   scale_y_continuous(name="Proportion of `yes' responses") 
   #theme(axis.title.x=element_blank(),axis.text.x=element_blank(),axis.ticks.x=element_blank())
-ggsave(f="../graphs/proportion-ai-by-condition.pdf",height=4,width=3.8)
+ggsave(f="../graphs/proportion-ai-by-condition.pdf",height=4,width=4)
 
 # old figure 7
 ggplot(agr, aes(x=SentenceType,y=Response,fill=SentenceType)) +
