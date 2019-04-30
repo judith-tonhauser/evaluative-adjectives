@@ -86,7 +86,7 @@ ggplot(agr, aes(x=ConDissonant,y=Mean)) +
   geom_text(data=agr_item_left, aes(label=Adj, colour = Adj),hjust=1.2,size=3) +
   geom_text(data=agr_item_right, aes(label=Adj, colour = Adj),hjust=-.2,size=3) +
   scale_x_discrete(name="Truth of generalization follows from common ground",labels=c("more likely","less likely")) +
-  scale_y_continuous(name="Mean certainty rating") +
+  scale_y_continuous(name="Mean projectivity rating") +
   facet_wrap(~condition)
 ggsave(f="../graphs/mean-certainty-ratings.pdf",height=4.5,width=6)
 
