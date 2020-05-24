@@ -7,7 +7,6 @@ setwd(this.dir)
 # load packages
 source('helpers.R')
 library(tidyverse)
-library(ordinal)
 
 theme_set(theme_bw())
 
@@ -53,6 +52,8 @@ cd.target = cd.target %>%
     Condition %in% c("CxC","CxD") ~ "Context",
     TRUE ~ "other"
   ))
+summary(cd.target)
+table(cd.target$condition)
 
 agr = cd.target %>%
   mutate(Response = as.numeric(as.character(Response))) %>%
@@ -60,11 +61,13 @@ agr = cd.target %>%
   summarise(Mean=mean(Response),CILow=ci.low(Response),CIHigh=ci.high(Response)) %>%
   ungroup() %>%
   mutate(YMin=Mean-CILow,YMax=Mean+CIHigh)
+agr
 
 agr_item = cd.target %>%
   mutate(Response = as.numeric(as.character(Response))) %>%
   group_by(condition,ConDissonant,Adj) %>%
   summarise(Mean=mean(Response))
+agr_item
 
 agr_item_left = agr_item %>%
   filter(ConDissonant == "C", Adj %in% c("polite","rude","wise","stupid","foolish"))
@@ -83,7 +86,9 @@ ggplot(agr, aes(x=ConDissonant,y=Mean)) +
   scale_x_discrete(name="Truth of generalization follows from common ground",labels=c("more likely","less likely")) +
   scale_y_continuous(name="Mean projectivity rating") +
   facet_wrap(~condition)
-ggsave(f="../graphs/mean-certainty-ratings.pdf",height=4.5,width=6)
+ggsave(f="../graphs/exp1-mean-certainty-ratings.pdf",height=4.5,width=6)
+ggsave(f="../../../../paper/final-non-anon-formatted-paper/figures/exp1-mean-certainty-ratings.pdf",height=4.5,width=6)
+ggsave(f="../../../../paper/final-non-anon-formatted-paper/figures/exp1-mean-certainty-ratings.eps",height=4.5,width=6)
 
 # paper figure 8 ----
 
@@ -129,3 +134,6 @@ ggplot(agr, aes(x=Response,fill=ConDissonant)) +
   theme(legend.position="none") +
   facet_grid(. ~ Follows)
 ggsave(f="../graphs/count-of-participants.pdf",height=2.5,width=5)
+ggsave(f="../../../../paper/final-non-anon-formatted-paper/figures/exp1-count-of-participants.pdf",height=2.5,width=5)
+ggsave(f="../../../../paper/final-non-anon-formatted-paper/figures/exp1-count-of-participants.eps",height=2.5,width=5)
+

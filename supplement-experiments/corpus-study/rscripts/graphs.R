@@ -95,5 +95,7 @@ ggplot(agr, aes(x=Adj,y=Mean,color=Adj)) +
   theme(legend.position="none") +
   scale_x_discrete(name="Adjective of negated evaluative adjective sentence") +
   scale_y_discrete(limits = c(1,2,3,4,5,6,7),name="Mean certainty rating")
-ggsave("../graphs/mean-response-by-item-and-adj.pdf",width=5,height=2)
+ggsave("../graphs/corpus-mean-response-by-item-and-adj.pdf",width=5,height=2)
+ggsave("../../../../paper/final-non-anon-formatted-paper/figures/corpus-mean-response-by-item-and-adj.png",width=5,height=2)
+ggsave("../../../../paper/final-non-anon-formatted-paper/figures/corpus-mean-response-by-item-and-adj.pdf",width=5,height=2)
 

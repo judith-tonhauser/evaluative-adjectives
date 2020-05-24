@@ -72,5 +72,8 @@ ggplot(agr, aes(x=SentenceType,y=Response,fill=SentenceType)) +
   scale_x_discrete(name="Truth of generalization follows from common ground") +
   scale_y_continuous(name="Proportion of `yes' responses") 
   #theme(axis.title.x=element_blank(),axis.text.x=element_blank(),axis.ticks.x=element_blank())
-ggsave(f="../graphs/proportion-ai-by-condition.pdf",height=4,width=4)
+ggsave(f="../graphs/exp2-proportion-ai-by-condition.pdf",height=4,width=4)
+ggsave(f="../../../../paper/final-non-anon-formatted-paper/figures/exp2-proportion-ai-by-condition.pdf",height=4,width=4)
+ggsave(f="../../../../paper/final-non-anon-formatted-paper/figures/exp2-proportion-ai-by-condition.eps",height=4,width=4)
+
 

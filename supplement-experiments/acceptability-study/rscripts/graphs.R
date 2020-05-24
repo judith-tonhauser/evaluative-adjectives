@@ -49,6 +49,9 @@ ggplot(d, aes(x=Response, fill=Enough)) +
         legend.position="top",
         panel.background = element_blank())
 ggsave("../graphs/acc-histogram.pdf",height=3,width=4)
+ggsave(f="../../../../paper/final-non-anon-formatted-paper/figures/acc-histogram.eps",height=3,width=4)
+ggsave(f="../../../../paper/final-non-anon-formatted-paper/figures/acc-histogram.pdf",height=3,width=4)
+
 
 # Supplement figure 2
 
@@ -82,4 +85,7 @@ ggplot(acc, aes(x=workerid2,y=Diff)) +
   scale_x_discrete(name="Participant") +
   scale_y_continuous(name="Acceptability score")
 ggsave("../graphs/acc-acceptability-rating-difference.pdf",width=4.5,height=3)
+ggsave(f="../../../../paper/final-non-anon-formatted-paper/figures/acc-acceptability-rating-difference.eps",width=4.5,height=3)
+ggsave(f="../../../../paper/final-non-anon-formatted-paper/figures/acc-acceptability-rating-difference.pdf",width=4.5,height=3)
+
 
