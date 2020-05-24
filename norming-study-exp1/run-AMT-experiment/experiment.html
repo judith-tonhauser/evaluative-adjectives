@@ -1,0 +1,212 @@
+<!doctype html>
+
+<html>
+	<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Linguistics Research Experiment</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <link rel="stylesheet" href="commonJS/style.css" />
+</head> 
+<body>
+
+  <div class="progress">
+	<span>Progress:</span>
+	<div class="bar-wrapper">
+	  <div class="bar" width="0%">
+	  </div>
+	</div>
+  </div>
+
+<!--		<style type="text/css">
+			body {
+				margin: 20px;
+				width: 750px;
+				font-family: verdana, helvetica, sans-serif;
+				background-color: white;
+				color: black;
+			}
+			p {
+				width: 700px;;
+				text-align: left;
+			}
+			#logo {
+				/*float: right;*/
+				width: 300px;
+			}
+			a {
+				color: purple;
+			}
+			.centered {
+		    text-align: center;
+		    font-size: 90%;
+		   }
+		</style>
+-->		
+
+
+  <div class="slide" id="consent">
+  <br>
+		<p ><b>Instructions </b></p>
+
+<p class="block-text">You will read 14 short descriptions of a scenario. Each description 
+consists of two sentences. We ask you to answer a question about each scenario.
+
+<br>
+<br> For example, you might read the following description: 
+
+<br>
+<br><b><i>Maggy was planning a trip to Costa Rica. She bought a guide book.</i></b>
+
+<br>
+<br>
+And we will ask you to respond to the following question: 
+
+<br>
+<br> <b> Was it smart for Maggy to buy a guide book? </b>
+
+<br>
+<br>
+You indicate your answer on the following scale, ranging from "No" (it was not smart) to 
+"Yes" (it was smart):
+</p>
+
+<table width='600px' align="center" border='0' cellpadding='1' cellspacing='4'>
+	<tr>
+	<div align="center"><td width='80px' class='centered'><input type='radio' name='radioresponse' value='1'/></td><td width='80px' class='centered'><input type='radio' name='radioresponse' value='2'/></td><td width='80px' class='centered'><input type='radio' name='radioresponse' value='3'/></td><td width='80px' class='centered'><input type='radio' name='radioresponse' value='4'/></td><td width='80px' class='centered'><input type='radio' name='radioresponse' value='5'/></td><td width='80px' class='centered'><input type='radio' name='radioresponse' value='6'/></td><td width='80px' class='centered'><input type='radio' name='radioresponse' value='7'/></td></div></tr> 
+<tr><td class='centered'><span>No</span></td><td>&nbsp;</td><td class='centered'>Possibly no </td><td>&nbsp;</td>
+<td class='centered'>Possibly <br/> yes</td><td></td><td class='centered'><span>Yes</span></td></tr>	   
+    </table>  
+
+<!--
+<br>
+<br>
+<p class="block-text">
+<b> Task overview</b>: We ask you to answer a question about fourteen (14) discourses.
+To make sure that you are paying attention, we've included
+utterances that Debby will definitely think are true and some that she
+will definitely think are false. If you pay attention, you are sure to
+get them right!-->
+
+<br>
+<br>
+<p class="block-text">
+<b> Survey:</b> At the end of the task, we ask you three short questions about you and your language background. You will be paid no matter what answers you give in this survey (so please answer truthfully).
+<br>
+</p>
+
+<p class="block-text"> <b> Consent:</b>
+
+  By answering the questions below, you are participating in a study performed by a 
+  linguist affiliated with the Department of Linguistics at The Ohio State University. 
+  If you have questions about this research, please contact Judith Tonhauser at 
+  <a href="mailto:tonhauser.1@osu.edu">tonhauser.1@osu.edu</a>. You must be at least 18 
+  years old to participate. Your participation in this research is voluntary. You may 
+  decline to answer any or all of the following questions, without adverse consequences. 
+  Your anonymity is assured. If you do not wish to participate in this study, please 
+  return the HIT now. You will be paid 45 cents to participate in the study, which will 
+  take about four minutes to complete. For questions about your rights as a participant 
+  in this study or to discuss other study-related concerns or complaints with someone 
+  who is not part of the research team, you may contact Ms. Sandra Meadows in the Office 
+  of Responsible Research Practices at 1-800-678-6251.
+</p>
+    
+<button type="button" onClick="this.blur(); experiment.instructions()">Start
+    </button>
+
+</div>
+
+  <div class="slide" id="instructions">
+	<br>
+
+<p class="block-text"> 
+	
+For each of the 14 descriptions, please answer the question for that description. 
+
+<!--
+<br>
+<br>
+You are asked to judge whether <b> Debby</b> thinks that the underlined part of her utterance is true.
+
+-->
+</p>
+<br>
+    <button type="button" id="begin" value="Begin">Begin</button>
+  </div>
+  
+    
+
+  <div class="slide" id="comprehensiontrial">
+  	<br>
+	<p class="sentence">{{}}</p> <br> 	
+	<p class="question">{{}}</p>
+<table width='600px' align="center" border='0' cellpadding='1' cellspacing='4'>
+<!--	<tr>-->
+	<tr align=center>  
+	<div class="radioResponses" align=center>{{}}</div></tr> 
+	<div class="radioLabels" align=center>{{}}</div></tr> 
+<!--<tr align="center"><td><span>No, <br/>not true</span></td><td>&nbsp;</td><td>Possibly <br/> not true</td><td>&nbsp;</td><td>Possibly <br/> true</td><td></td><td><span>Yes, </br>true</span></td></tr>-->
+
+<!-- Original radio button language
+
+<tr><td class='centered'><span>No, <br/>not true</span></td><td>&nbsp;</td><td class='centered'>Possibly <br/> not true</td><td>&nbsp;</td><td class='centered'>Possibly <br/> true</td><td></td><td class='centered'><span>Yes, </br>true</span></td></tr> -->	   
+
+    </table>       
+    
+    <button type="button" class="compcontinue">Continue</button>
+	<p class="err">Please give an answer by clicking one of the radio buttons.</p>    
+  </div>   
+  
+
+  <div class="slide" id="questionaire">
+<br>
+<br>
+<p class="block-text"><b>Three questions about you and your language background:</b> You will be paid no matter what answers you give here, so please answer truthfully.
+    <br/>
+    <form id="questionaireform">
+	  <p>Your age: <input type="text" name="age"></input></p>
+	  <br/>
+<!--	  <p>Your gender: <input type="text" name="gender"></input></p>
+	  <br/>-->
+	  <p>Your native language(s):<input type="text" name="lg"></input><br/>(the language(s) that
+	  was/were spoken at home when you were a child)</p>
+	  <br/></p>
+<p class="block-text">If English is your native language, are you a speaker of AMERICAN English (as opposed to e.g. Australian or Indian English)?</p>
+
+<table border="0" align="center" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td valign="center"><input name="AmericanEnglish" type="radio" value="Yes" /></td>
+			<td><span class="answertext">Yes</span></td>
+		</tr>
+		<tr>
+			<td valign="center"><input name="AmericanEnglish" type="radio" value="No" /></td>
+			<td><span class="answertext">No</span></td>
+		</tr>
+	</tbody>
+</table>
+	  <p><b>Optional:</b> We would be interested in any comments you have about this experiment. Please type them here:</p>
+	  <textarea rows="7" cols="70" name="comments"></textarea>
+	  <br/>
+	  <br/>
+    <button type="button" id="formsubmit">Submit</button>
+    </form>
+    <br/>
+
+  <div>
+
+  <div class="slide" id="finished">
+  You're finished - thanks for participating! Submitting to Mechanical Turk...
+  </div>
+
+  <!-- Scripts -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script> 
+
+	<script src="commonJS/jquery-1.9.0.js"></script>
+	<script src="commonJS/jquery-migrate-1.2.1.js"></script>
+	<script src="commonJS/jquery-ui.js"></script>	
+	<link rel="stylesheet" href="commonJS/jquery-ui.css">
+    <script src="commonJS/mmturkey.js"></script>
+    <script src="commonJS/browserCheck.js"></script>
+    <script src="experiment_files/experiment.js"></script>
+	</body>
+</html>

@@ -1,0 +1,100 @@
+reshapeData <- function(d)
+{
+  d$Trial1 = paste(d$Gender0,d$Speaker0,d$Quantifier0,d$Verb0,d$Object0, d$Container0,d$Slider00,d$Slider01,d$Slider02)
+  d$Trial2 = paste(d$Gender1,d$Speaker1,d$Quantifier1,d$Verb1,d$Object1, d$Container1,d$Slider10,d$Slider11,d$Slider12)  
+  d$Trial3 = paste(d$Gender2,d$Speaker2,d$Quantifier2,d$Verb2,d$Object2, d$Container2,d$Slider20,d$Slider21,d$Slider22)
+  d$Trial4 = paste(d$Gender3,d$Speaker3,d$Quantifier3,d$Verb3,d$Object3, d$Container3,d$Slider30,d$Slider31,d$Slider32)  
+  d$Trial5 = paste(d$Gender4,d$Speaker4,d$Quantifier4,d$Verb4,d$Object4, d$Container4,d$Slider40,d$Slider41,d$Slider42)
+  d$Trial6 = paste(d$Gender5,d$Speaker5,d$Quantifier5,d$Verb5,d$Object5, d$Container5,d$Slider50,d$Slider51,d$Slider52)  
+  d$Trial7 = paste(d$Gender6,d$Speaker6,d$Quantifier6,d$Verb6,d$Object6, d$Container6,d$Slider60,d$Slider61,d$Slider62)
+  d$Trial8 = paste(d$Gender7,d$Speaker7,d$Quantifier7,d$Verb7,d$Object7, d$Container7,d$Slider70,d$Slider71,d$Slider72)   
+  d$Trial9 = paste(d$Gender8,d$Speaker8,d$Quantifier8,d$Verb8,d$Object8, d$Container8,d$Slider80,d$Slider81,d$Slider82)  
+  d$Trial10 = paste(d$Gender9,d$Speaker9,d$Quantifier9,d$Verb9,d$Object9, d$Container9,d$Slider90,d$Slider91,d$Slider92)
+  d$Trial11 = paste(d$Gender10,d$Speaker10,d$Quantifier10,d$Verb10,d$Object10, d$Container10,d$Slider100,d$Slider101,d$Slider102)  
+  d$Trial12 = paste(d$Gender11,d$Speaker11,d$Quantifier11,d$Verb11,d$Object11, d$Container11,d$Slider110,d$Slider111,d$Slider112)
+  d$Trial13 = paste(d$Gender12,d$Speaker12,d$Quantifier12,d$Verb12,d$Object12, d$Container12,d$Slider120,d$Slider121,d$Slider122)  
+  d$Trial14 = paste(d$Gender13,d$Speaker13,d$Quantifier13,d$Verb13,d$Object13, d$Container13,d$Slider130,d$Slider131,d$Slider132)  
+  return(d) 
+} 
+
+getGender <- function(dd) {
+  genders = data.frame(Name = c("Alex", "Ben", "Calvin", "Dan", "Ted", "Max","Ann", "Liz", "Diane","Amy", "Marie", "Jane"), Gender = c(rep("male",6),rep("female",6)))
+  row.names(genders) = genders$Name
+  for (i in seq(0, 23)) {
+    dd[,paste("Gender",i,sep="")] = genders[as.character(dd[,paste("Speaker",i,sep="")]),]$Gender
+  }
+  return(dd)
+}
+
+getQUD <- function(qud) {
+  #print(qud)
+  if (length(grep("How many", qud)) > 0) {
+    return("HowMany?")
+  } else {
+    if (length(grep("all", qud)) > 0) {
+      return("All?")
+    } else {
+      if (length(grep("Are any", qud)) > 0) {
+        return("Any?")
+      } else {
+        return("ERROR!")
+      }
+    }
+  }
+}
+
+myCenter <- function(x) {
+  if (is.numeric(x)) { return(x - mean(x)) }
+  if (is.factor(x)) {
+    x <- as.numeric(x)
+    return(x - mean(x))
+  }
+  if (is.data.frame(x) || is.matrix(x)) {
+    m <- matrix(nrow=nrow(x), ncol=ncol(x))
+    colnames(m) <- paste("c", colnames(x), sep="")
+    for (i in 1:ncol(x)) {
+      if (is.factor(x[,i])) {
+        y <- as.numeric(x[,i])
+        m[,i] <- y - mean(y, na.rm=T)
+      }
+      if (is.numeric(x[,i])) {
+        m[,i] <- x[,i] - mean(x[,i], na.rm=T)
+      }
+    }
+    return(as.data.frame(m))
+  }
+}
+
+se <- function(x)
+{
+  y <- x[!is.na(x)] # remove the missing values, if any
+  sqrt(var(as.vector(y))/length(y))
+}
+
+zscore <- function(x){
+  ## Returns z-scored values
+  x.mean <- mean(x)
+  x.sd <- sd(x)
+  
+  x.z <- (x-x.mean)/x.sd
+  
+  return(x.z)
+}
+
+zscoreByGroup <- function(x, groups){ 
+  #Compute zscores within groups
+  out <- rep(NA, length(x))
+  
+  for(i in unique(groups)){
+    out[groups == i] <- zscore(x[groups == i])
+  }
+  return(out)
+}
+
+## for bootstrapping 95% confidence intervals
+library(bootstrap)
+theta <- function(x,xdata,na.rm=T) {mean(xdata[x],na.rm=na.rm)}
+ci.low <- function(x,na.rm=T) {
+  mean(x,na.rm=na.rm) - quantile(bootstrap(1:length(x),1000,theta,x,na.rm=na.rm)$thetastar,.025,na.rm=na.rm)}
+ci.high <- function(x,na.rm=T) {
+  quantile(bootstrap(1:length(x),1000,theta,x,na.rm=na.rm)$thetastar,.975,na.rm=na.rm) - mean(x,na.rm=na.rm)}

@@ -1,0 +1,54 @@
+import csv
+import itertools
+import random
+import ast
+
+# put files in the order you want concatentated
+csv_names = ["factives.results"] 
+
+lines = []
+headers = []
+
+readers = [csv.DictReader(open(fn, 'rb'),delimiter="\t",quotechar='\"') for fn in csv_names]
+
+for r in readers:
+	lines.extend(list(r))
+	headers = r.fieldnames
+	
+print headers	
+
+for (k,l) in enumerate(lines):
+       	responselist = ast.literal_eval(l['Answer.responses'])
+	for i in range(14):
+		l['Response'+str(i)] = responselist[i]
+
+	triallist = ast.literal_eval(l['Answer.trials'])
+	print triallist
+	for i in range(14):	
+		l['ID'+str(i)] = triallist[i]['id']
+		l['Name'+str(i)] = triallist[i]['name']
+		l['Pronoun'+str(i)] = triallist[i]['pronoun']
+		l['Verb'+str(i)] = triallist[i]['verb']
+		l['Modal'+str(i)] = triallist[i]['modal']
+		l['Underlined'+str(i)] = triallist[i]['underlined']
+
+	del l['Answer.responses']
+	del l['Answer.trials']	
+
+
+headers.remove('Answer.responses')
+headers.remove('Answer.trials')
+
+for i in range(14):
+	headers.append('Response'+str(i))
+	headers.append('ID'+str(i))		
+	headers.append('Name'+str(i))
+	headers.append('Pronoun'+str(i))
+	headers.append('Verb'+str(i))
+	headers.append('Modal'+str(i))
+	headers.append('Underlined'+str(i))
+
+
+w = csv.DictWriter(open('result.csv', 'wb'),fieldnames=headers,restval="NA",delimiter="\t")
+w.writeheader()
+w.writerows(lines)
