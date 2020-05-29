@@ -1,0 +1,121 @@
+List,Random,Adjective,Name,ID,Condition,Context,Target,VPinf,Contradict,Enough,Pronoun
+1,0.216913829,brave,Greg,19-brave-CnC-noE,CnC,Greg saw a child drowning in a river.,He jumped into the river.,to jump into the river,He watched from the river bank.,noE,He
+1,0.031673221,foolish enough,Kate,42-foolish-CnC-E,CnC,Kate took her nephew to the playground.,She wore high heels.,to wear high heels,She wore sneakers.,E,She
+1,0.551673619,fortunate enough,Sue,16-fortunate-CnC-E,CnC,Sue was training to become a dancer.,She had a great sense of rhythm.,to have a great sense of rhythm,She couldn't keep a beat.,E,She
+1,0.540894346,lucky enough,Eve,27-lucky-CxC-E,CxC,Eve was a finalist in The Bachelor.,She was chosen.,to be chosen,She lost out to the other woman.,E,She
+1,0.204828744,mean enough,Jack,58-mean-CxC-E,CxC,Jack's wife wanted to sleep in.,He woke her up at 5am.,to wake her up at 5am,He let her sleep as long as she wanted.,E,He
+1,0.406170036,polite enough,Chad,43-polite-CxC-E,CxC,Chad's friend wanted to change her clothing.,He closed his eyes.,to close his eyes,He watched her change.,E,He
+1,0.816613402,rude enough,Ann,50-rude-CnC-E,CnC,Ann was visiting her older brother.,She insulted his wife.,to insult his wife,She was kind to his unfriendly wife.,E,She
+1,0.179091051,smart,Jane,3-smart-CxC-noE,CxC,Jane wanted to get a good job.,She went to school.,to go to school,She dropped out of school.,noE,She
+1,0.730087211,stupid,Zack,8-stupid-CnC-noE,CnC,Zack left the bar drunk.,He drove home.,to drive home,He called a taxi.,noE,He
+1,0.268201415,wise,Paul,33-wise-CnC-noE,CnC,Paul ran a marathon on Sunday.,He went to bed early the night before.,to go to bed early the night before,He stayed up late on Saturday.,noE,He
+2,0.909915352,brave,Greg,22-brave-CxC-noE,CxC,Greg was being attacked by five men.,He took them on.,to take them on,He curled up on the ground.,noE,He
+2,0.019232365,foolish,Kate,39-foolish-CxC-noE,CxC,Kate was drunk at a bar.,She took her top off.,to take her top off,She made sure she was safe.,noE,She
+2,0.061048172,fortunate enough,Sue,15-fortunate-CxC-E,CxC,Sue spontaneously went to the beach.,She was wearing flip-flops.,to be wearing flip-flops,She was wearing high heels.,E,She
+2,0.844788926,lucky enough,Eve,28-lucky-CnC-E,CnC,Eve bought a raffle ticket. ,She won the first prize.,to win the first prize,She won a consolation prize.,E,She
+2,0.592221068,mean enough,Jack,56-mean-CxC-E,CxC,Jack didn't like the movie his wife was watching.,He turned off the movie.,to turn off the movie,He still watched it with her.,E,He
+2,0.611522087,polite enough,Chad,44-polite-CxC-E,CxC,Chad was watching a theater play.,He applauded.,to applaud,He didn't applaud at the end.,E,He
+2,0.094404958,rude enough,Ann,53-rude-CnC-E,CnC,Ann had insulted her husband.,She laughed at his tears.,to laugh at his tears,She felt terrible and apologized.,E,She
+2,0.825430479,smart enough,Jane,3-smart-CxC-E,CxC,Jane wanted to get a good job.,She went to school.,to go to school,She dropped out of school.,E,She
+2,0.784410159,stupid,Zack,9-stupid-CxC-noE,CxC,Zack was sitting in the bath tub.,He used the hair dryer.,to use the hair dryer,He was far away from all electrical appliances.,noE,He
+2,0.137580824,wise,Paul,35-wise-CnC-noE,CnC,Paul was staying in a bad part of town.,He stayed at home at night.,to stay at home at night,He went out alone in the dark.,noE,He
+3,0.796348436,brave,Greg,21-brave-CxC-noE,CxC,Greg was offered a job as a lion tamer.,He took the job.,to take the job,He didn't take it.,noE,He
+3,0.428682458,foolish,Kate,37-foolish-CxC-noE,CxC,Kate was completely broke.,She went shopping.,to go shopping,She stayed home.,noE,She
+3,0.573986677,fortunate,Sue,18-fortunate-CxC-noE,CxC,Sue needed to get some rest.,She fell asleep.,to fall asleep,She just couldn't get any sleep.,noE,She
+3,0.285518752,lucky enough,Eve,28-lucky-CxC-E,CxC,Eve has a 5th grade education.,She got a minimum wage job,to get a minimum wage job,She can't get a job.,E,She
+3,0.878160981,mean enough,Jack,56-mean-CnC-E,CnC,Jack saw a hungry dog.,He pretended to have food for him.,to pretend to have food for him,He walked away.,E,He
+3,0.795908663,polite enough,Chad,47-polite-CnC-E,CnC,Chad had insulted his wife.,He apologized.,to apologize,He refused to acknowledge his insult.,E,He
+3,0.14937691,rude enough,Ann,50-rude-CxC-E,CxC,Ann got reprimanded by her boss.,She ignored him.,to ignore him,She apologized for her mistake.,E,She
+3,0.319382928,smart enough,Jane,2-smart-CxC-E,CxC,Jane saw a man with a gun.,She called the police.,to call the police,She did nothing.,E,She
+3,0.417205914,stupid enough,Zack,9-stupid-CxC-E,CxC,Zack was sitting in the bath tub.,He used the hair dryer.,to use the hair dryer,He was far away from all electrical appliances.,E,He
+3,0.41440593,wise,Paul,33-wise-CxC-noE,CxC,Paul went on a hike in the Alps.,He wore hiking boots.,to wear hiking boots,He wore flip-flops.,noE,He
+4,0.928833476,brave,Greg,22-brave-CnC-noE,CnC,Greg saw a man hit a dog.,He stood up to the man.,to stand up to the man,He walked away.,noE,He
+4,0.130466544,foolish,Kate,42-foolish-CnC-noE,CnC,Kate took her nephew to the playground.,She wore high heels.,to wear high heels,She wore sneakers.,noE,She
+4,0.245298464,fortunate,Sue,16-fortunate-CnC-noE,CnC,Sue was training to become a dancer.,She had a great sense of rhythm.,to have a great sense of rhythm,She couldn't keep a beat.,noE,She
+4,0.852750981,lucky,Eve,27-lucky-CxC-noE,CxC,Eve was a finalist in The Bachelor.,She was chosen.,to be chosen,She lost out to the other woman.,noE,She
+4,0.659928721,mean enough,Jack,59-mean-CnC-E,CnC,Jack bumped his shopping cart into a woman.,He laughed when she cried.,to laugh when she cried,He felt bad and apologized.,E,He
+4,0.308609332,polite enough,Chad,46-polite-CnC-E,CnC,Chad was standing in front of his friend's door.,He knocked gently.,to knock gently,He banged at the door.,E,He
+4,0.241421412,rude enough,Ann,49-rude-CxC-E,CxC,Ann's neighbor greeted her.,She ignored him.,to ignore him,She greeted him back.,E,She
+4,0.191418355,smart enough,Jane,1-smart-CnC-E,CnC,Jane wanted to get a good job.,She got her high school degree.,to get her high school degree,She dropped out of high school.,E,She
+4,0.709800939,stupid enough,Zack,9-stupid-CnC-E,CnC,Zack discovered that his girlfriend was cheating.,He married her.,to marry her,He broke up with her.,E,He
+4,0.258305909,wise enough,Paul,33-wise-CnC-E,CnC,Paul ran a marathon on Sunday.,He went to bed early the night before.,to go to bed early the night before,He stayed up late on Saturday.,E,He
+5,0.862015725,brave,Greg,20-brave-CxC-noE,CxC,Greg was asked to speak up against the crime boss.,He agreed to do it.,to agree to do it,He refused to speak up.,noE,He
+5,0.865343567,foolish,Kate,37-foolish-CnC-noE,CnC,Kate was working a very stressful job.,She ignored her health problems.,to ignore her health problems,She tried to deal with her health problems.,noE,She
+5,0.890217593,fortunate,Sue,15-fortunate-CnC-noE,CnC,Sue was traveling in France.,She spoke some French.,to speak some French,She couldn't understand the language.,noE,She
+5,0.127961526,lucky,Eve,29-lucky-CnC-noE,CnC,Eve wanted to be a model.,She had beautiful skin.,to have beautiful skin,She had bad skin.,noE,She
+5,0.761873443,mean,Jack,55-mean-CnC-noE,CnC,Jack walked past an old man with a cane.,He pushed the man.,to push the man,He steered clear of the man.,noE,He
+5,0.021268073,polite enough,Chad,43-polite-CnC-E,CnC,Chad was visiting his grandmother.,He brought a gift.,to bring a gift,He came empty-handed.,E,He
+5,0.79180944,rude enough,Ann,52-rude-CnC-E,CnC,Ann was standing in front of her friend's door.,She was eavesdropping.,to be eavesdropping,She knocked to let him know she was there.,E,She
+5,0.332957466,smart enough,Jane,4-smart-CnC-E,CnC,Jane was baby-sitting for her sister.,She kept an eye on the baby at all times.,to keep an eye on the baby at all times,She left the baby unattended.,E,She
+5,0.135842735,stupid enough,Zack,10-stupid-CxC-E,CxC,Zack saw two wasps in his drink.,He took a sip.,to take a sip,He threw away his drink.,E,He
+5,0.616757782,wise enough,Paul,35-wise-CnC-E,CnC,Paul was staying in a bad part of town.,He stayed at home at night.,to stay at home at night,He went out alone in the dark.,E,He
+6,0.620401745,brave,Greg,23-brave-CnC-noE,CnC,Greg wrote a controversial article.,He used his own name.,to use his own name,He used a fake name.,noE,He
+6,0.975998416,foolish,Kate,41-foolish-CnC-noE,CnC,Kate's doctor told her to lose weight.,She ignored him.,to ignore him,She listened to him.,noE,She
+6,0.331500788,fortunate,Sue,15-fortunate-CxC-noE,CxC,Sue spontaneously went to the beach.,She was wearing flip-flops.,to be wearing flip-flops,She was wearing high heels.,noE,She
+6,0.322434269,lucky,Eve,30-lucky-CxC-noE,CxC,Eve did not understand her chemistry class.,She got a B.,to get a B,She failed the class.,noE,She
+6,0.741029285,mean,Jack,56-mean-CnC-noE,CnC,Jack saw a hungry dog.,He pretended to have food for him.,to pretend to have food for him,He walked away.,noE,He
+6,0.610606056,polite,Chad,43-polite-CxC-noE,CxC,Chad's friend wanted to change her clothing.,He closed his eyes.,to close his eyes,He watched her change.,noE,He
+6,0.800365954,rude enough,Ann,51-rude-CxC-E,CxC,Ann was eating pasta with her friends.,She used her fingers.,to use her fingers,She was using a fork.,E,She
+6,0.37385265,smart enough,Jane,1-smart-CxC-E,CxC,Jane's father couldn't hear the TV.,She turned up the volume.,to turn up the volume,She didn't change the volume.,E,She
+6,0.836130575,stupid enough,Zack,8-stupid-CnC-E,CnC,Zack left the bar drunk.,He drove home.,to drive home,He called a taxi.,E,He
+6,0.550737016,wise enough,Paul,31-wise-CnC-E,CnC,Paul lost his wallet with his credit cards.,He canceled the credit cards immediately.,to cancel the credit cards immediately,He waited a week to cancel the cards.,E,He
+7,0.584249242,brave enough,Greg,21-brave-CxC-E,CxC,Greg was offered a job as a lion tamer.,He took the job.,to take the job,He didn't take it.,E,He
+7,0.855605739,foolish,Kate,38-foolish-CxC-noE,CxC,Kate had a broken ankle.,She went for a run.,to go for a run,She rested her ankle.,noE,She
+7,0.195180884,fortunate,Sue,13-fortunate-CnC-noE,CnC,Sue was bitten by a shark.,She got away with a few cuts.,to get away with a few cuts,She lost a leg.,noE,She
+7,0.697691096,lucky,Eve,28-lucky-CnC-noE,CnC,Eve bought a raffle ticket. ,She won the first prize.,to win the first prize,She won a consolation prize.,noE,She
+7,0.853325645,mean,Jack,59-mean-CnC-noE,CnC,Jack bumped his shopping cart into a woman.,He laughed when she cried.,to laugh when she cried,He felt bad and apologized.,noE,He
+7,0.245733478,polite,Chad,43-polite-CnC-noE,CnC,Chad was visiting his grandmother.,He brought a gift.,to bring a gift,He came empty-handed.,noE,He
+7,0.424503143,rude,Ann,52-rude-CnC-noE,CnC,Ann was standing in front of her friend's door.,She was eavesdropping.,to be eavesdropping,She knocked to let him know she was there.,noE,She
+7,0.101529868,smart enough,Jane,5-smart-CnC-E,CnC,Jane's computer was hacked.,She changed her passwords immediately.,to change her passwords immediately,She kept using the same passwords.,E,She
+7,0.838374989,stupid enough,Zack,10-stupid-CnC-E,CnC,Zack was offered some contaminated heroin.,He injected it.,to inject it,He refused to take it.,E,He
+7,0.253255731,wise enough,Paul,36-wise-CxC-E,CxC,Paul wanted to keep his excellent employee happy.,He promoted her.,to promote her,He kept her in the same low-level position.,E,He
+8,0.537462865,brave enough,Greg,23-brave-CnC-E,CnC,Greg wrote a controversial article.,He used his own name.,to use his own name,He used a fake name.,E,He
+8,0.611163305,foolish enough,Kate,37-foolish-CnC-E,CnC,Kate was working a very stressful job.,She ignored her health problems.,to ignore her health problems,She tried to deal with her health problems.,E,She
+8,0.62178489,fortunate,Sue,17-fortunate-CxC-noE,CxC,Sue needed a present for her sick friend.,She had a flower bouquet.,to have a flower bouquet,She didn't have anything.,noE,She
+8,0.311582685,lucky,Eve,30-lucky-CnC-noE,CnC,Eve was in a car accident.,She got away unscathed.,to get away unscathed,She got badly hurt.,noE,She
+8,0.843559618,mean,Jack,56-mean-CxC-noE,CxC,Jack didn't like the movie his wife was watching.,He turned off the movie.,to turn off the movie,He still watched it with her.,noE,He
+8,0.394869665,polite,Chad,44-polite-CxC-noE,CxC,Chad was watching a theater play.,He applauded.,to applaud,He didn't applaud at the end.,noE,He
+8,0.57812284,rude,Ann,49-rude-CxC-noE,CxC,Ann's neighbor greeted her.,She ignored him.,to ignore him,She greeted him back.,noE,She
+8,0.780091891,smart,Jane,2-smart-CxC-noE,CxC,Jane saw a man with a gun.,She called the police.,to call the police,She did nothing.,noE,She
+8,0.833818594,stupid enough,Zack,7-stupid-CxC-E,CxC,Zack had the measles.,He went to school.,to go to school,He stayed in his room.,E,He
+8,0.766982117,wise enough,Paul,33-wise-CxC-E,CxC,Paul went on a hike in the Alps.,He wore hiking boots.,to wear hiking boots,He wore flip-flops.,E,He
+9,0.337573306,brave enough,Greg,19-brave-CnC-E,CnC,Greg saw a child drowning in a river.,He jumped into the river.,to jump into the river,He watched from the river bank.,E,He
+9,0.516519148,foolish enough,Kate,39-foolish-CxC-E,CxC,Kate was drunk at a bar.,She took her top off.,to take her top off,She made sure she was safe.,E,She
+9,0.335904633,fortunate enough,Sue,13-fortunate-CnC-E,CnC,Sue was bitten by a shark.,She got away with a few cuts.,to get away with a few cuts,She lost a leg.,E,She
+9,0.512820924,lucky,Eve,28-lucky-CxC-noE,CxC,Eve has a 5th grade education.,She got a minimum wage job,to get a minimum wage job,She can't get a job.,noE,She
+9,0.212982929,mean,Jack,59-mean-CxC-noE,CxC,Jack's daughter is lactose intolerant.,He gave her a milk shake.,to give her a milk shake,He gave her an ice tea.,noE,He
+9,0.528201405,polite,Chad,45-polite-CxC-noE,CxC,Chad watched a street comedian.,He laughed.,to laugh,He frowned because he didn't like the act.,noE,He
+9,0.061055235,rude,Ann,53-rude-CnC-noE,CnC,Ann had insulted her husband.,She laughed at his tears.,to laugh at his tears,She felt terrible and apologized.,noE,She
+9,0.498087175,smart,Jane,4-smart-CnC-noE,CnC,Jane was baby-sitting for her sister.,She kept an eye on the baby at all times.,to keep an eye on the baby at all times,She left the baby unattended.,noE,She
+9,0.590659622,stupid,Zack,7-stupid-CxC-noE,CxC,Zack had the measles.,He went to school.,to go to school,He stayed in his room.,noE,He
+9,0.468740452,wise enough,Paul,31-wise-CxC-E,CxC,Paul bought an expensive TV.,He asked about the return policy.,to ask about the return policy,He didn't ask the sales person any questions.,E,He
+10,0.385354949,brave enough,Greg,22-brave-CnC-E,CnC,Greg saw a man hit a dog.,He stood up to the man.,to stand up to the man,He walked away.,E,He
+10,0.351675976,foolish enough,Kate,38-foolish-CxC-E,CxC,Kate had a broken ankle.,She went for a run.,to go for a run,She rested her ankle.,E,She
+10,0.244947934,fortunate enough,Sue,18-fortunate-CxC-E,CxC,Sue needed to get some rest.,She fell asleep.,to fall asleep,She just couldn't get any sleep.,E,She
+10,0.054311911,lucky enough,Eve,30-lucky-CnC-E,CnC,Eve was in a car accident.,She got away unscathed.,to get away unscathed,She got badly hurt.,E,She
+10,0.414128335,mean,Jack,58-mean-CxC-noE,CxC,Jack's wife wanted to sleep in.,He woke her up at 5am.,to wake her up at 5am,He let her sleep as long as she wanted.,noE,He
+10,0.096066189,polite,Chad,47-polite-CnC-noE,CnC,Chad had insulted his wife.,He apologized.,to apologize,He refused to acknowledge his insult.,noE,He
+10,0.89160494,polite,Chad,46-polite-CnC-noE,CnC,Chad was standing in front of his friend's door.,He knocked gently.,to knock gently,He banged at the door.,noE,He
+10,0.10478104,smart,Jane,1-smart-CxC-noE,CxC,Jane's father couldn't hear the TV.,She turned up the volume.,to turn up the volume,She didn't change the volume.,noE,She
+10,0.676729959,stupid,Zack,9-stupid-CnC-noE,CnC,Zack discovered that his girlfriend was cheating.,He married her.,to marry her,He broke up with her.,noE,He
+10,0.784358249,wise,Paul,36-wise-CxC-noE,CxC,Paul wanted to keep his excellent employee happy.,He promoted her.,to promote her,He kept her in the same low-level position.,noE,He
+11,0.957666862,brave enough,Greg,22-brave-CxC-E,CxC,Greg was being attacked by five men.,He took them on.,to take them on,He curled up on the ground.,E,He
+11,0.981802337,foolish enough,Kate,37-foolish-CxC-E,CxC,Kate was completely broke.,She went shopping.,to go shopping,She stayed home.,E,She
+11,0.843036571,fortunate enough,Sue,15-fortunate-CnC-E,CnC,Sue was traveling in France.,She spoke some French.,to speak some French,She couldn't understand the language.,E,She
+11,0.207737913,lucky enough,Eve,29-lucky-CnC-E,CnC,Eve wanted to be a model.,She had beautiful skin.,to have beautiful skin,She had bad skin.,E,She
+11,0.731616643,mean enough,Jack,59-mean-CxC-E,CxC,Jack's daughter is lactose intolerant.,He gave her a milk shake.,to give her a milk shake,He gave her an ice tea.,E,He
+11,0.408207101,rude,Ann,50-rude-CxC-noE,CxC,Ann got reprimanded by her boss.,She ignored him.,to ignore him,She apologized for her mistake.,noE,She
+11,0.034887937,rude,Ann,50-rude-CnC-noE,CnC,Ann was visiting her older brother.,She insulted his wife.,to insult his wife,She was kind to his unfriendly wife.,noE,She
+11,0.03099981,smart,Jane,1-smart-CnC-noE,CnC,Jane wanted to get a good job.,She got her high school degree.,to get her high school degree,She dropped out of high school.,noE,She
+11,0.305153459,stupid,Zack,10-stupid-CnC-noE,CnC,Zack was offered some contaminated heroin.,He injected it.,to inject it,He refused to take it.,noE,He
+11,0.211710503,wise,Paul,31-wise-CnC-noE,CnC,Paul lost his wallet with his credit cards.,He canceled the credit cards immediately.,to cancel the credit cards immediately,He waited a week to cancel the cards.,noE,He
+12,0.04305762,brave enough,Greg,20-brave-CxC-E,CxC,Greg was asked to speak up against the crime boss.,He agreed to do it.,to agree to do it,He refused to speak up.,E,He
+12,0.480196588,foolish enough,Kate,41-foolish-CnC-E,CnC,Kate's doctor told her to lose weight.,She ignored him.,to ignore him,She listened to him.,E,She
+12,0.798009586,fortunate enough,Sue,17-fortunate-CxC-E,CxC,Sue needed a present for her sick friend.,She had a flower bouquet.,to have a flower bouquet,She didn't have anything.,E,She
+12,0.173448133,lucky enough,Eve,30-lucky-CxC-E,CxC,Eve did not understand her chemistry class.,She got a B.,to get a B,She failed the class.,E,She
+12,0.499714203,mean enough,Jack,55-mean-CnC-E,CnC,Jack walked past an old man with a cane.,He pushed the man.,to push the man,He steered clear of the man.,E,He
+12,0.25281315,polite enough,Chad,45-polite-CxC-E,CxC,Chad watched a street comedian.,He laughed.,to laugh,He frowned because he didn't like the act.,E,He
+12,0.713598424,rude,Ann,51-rude-CxC-noE,CxC,Ann was eating pasta with her friends.,She used her fingers.,to use her fingers,She was using a fork.,noE,She
+12,0.830268483,smart,Jane,5-smart-CnC-noE,CnC,Jane's computer was hacked.,She changed her passwords immediately.,to change her passwords immediately,She kept using the same passwords.,noE,She
+12,0.941679231,stupid,Zack,10-stupid-CxC-noE,CxC,Zack saw two wasps in his drink.,He took a sip.,to take a sip,He threw away his drink.,noE,He
+12,0.931234104,wise,Paul,31-wise-CxC-noE,CxC,Paul bought an expensive TV.,He asked about the return policy.,to ask about the return policy,He didn't ask the sales person any questions.,noE,He
